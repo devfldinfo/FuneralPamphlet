@@ -135,20 +135,22 @@ function extractHymnsToPamphlet(aname, atextline, aimage, ahymns) {
     }
 
     var heading = template.heading || template.localHeading;
+
     var title = escapeLaTeX(heading);
-    var ht = template.hymnNum ? `${title}...\\\\#${template.hymnNum}` : title;
+    var ht = template.hymnNum ? `${title}...${escapeLaTeX('#' + template.hymnNum)}` : title;
 
     latex += `\\begin{hymn}{${num}}{${title}}
 \\hymntitlewithdropcap{${num}}{${ht}}
 `;
 
-    template.stanzas.forEach((s, i) => {
-      latex += `\\begin{stanza}\n${s}\n\\end{stanza}\n`;
-      if (i === 0 && template.chorus && template.engChorus) {
-        var fc = escapeLaTeX(template.engChorus.split('\n')[0]);
-        latex += `\\begin{chorus}\n\\setchorusline{${fc}}\n${template.chorus}\n\\end{chorus}\n`;
-      }
-    });
+  template.stanzas.forEach((s, i) => {
+  latex += `\\begin{stanza}\n${s}\n\\end{stanza}\n`;
+  if (i === 0 && template.chorus) {
+    var fc = template.chorus.split('\n')[0].replace(/\\\\+$/, ''); // remove trailing \\ 
+    //fc = escapeLaTeX(fc);
+    latex += `\\begin{chorus}\n\\setchorusline{${fc}}\n${template.chorus}\n\\end{chorus}\n`;
+  }
+});
 
     latex += "\\end{hymn}\n\n";
   });
