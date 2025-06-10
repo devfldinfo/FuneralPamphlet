@@ -48,7 +48,7 @@ jobs:
             lualatex -interaction=nonstopmode -output-directory=output "$file"
 
             # Rename output PDF
-            #mv output/"$base_name.pdf" output/"$base_name.pdf"
+            #mv output/"$base_name.pdf" output/"$base_name - View.pdf"
             done  
 
     #  - name: Auto Commit PDFs
