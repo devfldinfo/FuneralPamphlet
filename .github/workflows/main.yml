@@ -1,0 +1,45 @@
+name: Generate Booklet PDFs
+
+on:
+  workflow_run:
+    workflows: ["Compile LaTeX Files"]
+    types:
+      - completed
+  workflow_dispatch:
+
+jobs:
+  generate-booklets:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Install PDF Processing Tools
+        run: |
+          sudo apt update
+          sudo apt install -y texlive-extra-utils
+
+      - name: Process PDF Files
+        run: |
+          mkdir -p output
+          for file in output/*\ -\ View.pdf; do
+            if [[ -f "$file" ]]; then
+              base_name="${file% - View.pdf}"
+              pdfbook2 "$file"
+              mv "${file%.*}-book.pdf" "${base_name} - Print.pdf"
+            fi
+          done
+
+      - name: Auto Commit PDFs
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Compiled LaTeX files with View and Print versions"
+          push_options: '--force'
+          file_pattern: 'output/*.pdf'
+
+      - name: Upload PDFs
+        uses: actions/upload-artifact@v4
+        with:
+          name: compiled-and-booklet-pdfs
+          path: output/*.pdf
