@@ -44,9 +44,9 @@ jobs:
             # Third LaTeX run (to finalize references)
             pdflatex -interaction=nonstopmode -output-directory=output "$file"
 
-      #      # Rename output PDF
-     #       # mv output/"$base_name.pdf" output/"$base_name.pdf"
-      #    done  
+            # Rename output PDF
+            # mv output/"$base_name.pdf" output/"$base_name.pdf"
+            done  
 
     #  - name: Auto Commit PDFs
     #     uses: stefanzweifel/git-auto-commit-action@v4
