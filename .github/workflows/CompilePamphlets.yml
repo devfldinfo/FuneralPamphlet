@@ -31,7 +31,7 @@ jobs:
             base_name=$(basename "$file" .txt)
 
             # First LaTeX run (to generate .bcf and auxiliary files)
-            pdflatex -interaction=nonstopmode -output-directory=output "$file"
+            lualatex -interaction=nonstopmode -output-directory=output "$file"
 
             # If .bcf file exists, run Biber
             if [ -f "output/$base_name.bcf" ]; then
@@ -39,10 +39,10 @@ jobs:
             fi
 
             # Second LaTeX run (to process citations and references)
-            pdflatex -interaction=nonstopmode -output-directory=output "$file"
+            lualatex -interaction=nonstopmode -output-directory=output "$file"
 
             # Third LaTeX run (to finalize references)
-            pdflatex -interaction=nonstopmode -output-directory=output "$file"
+            lualatex -interaction=nonstopmode -output-directory=output "$file"
 
             # Rename output PDF
             #mv output/"$base_name.pdf" output/"$base_name.pdf"
