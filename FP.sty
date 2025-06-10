@@ -1,0 +1,98 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{FP}[2025/05/04 Hymnbook layout with left-aligned number and title]
+
+\RequirePackage{titlesec}
+\RequirePackage{parskip}
+\RequirePackage{xcolor}
+\RequirePackage{etoolbox}
+\RequirePackage{geometry}
+\RequirePackage{fancyhdr}
+\RequirePackage{multicol}
+\RequirePackage{needspace}
+\RequirePackage{fontspec}
+\RequirePackage{tocloft}
+
+% Page setup
+\geometry{margin=0.3in}
+\pagestyle{empty} % Disable page numbers
+
+% Font setup
+\newfontfamily\timesnewroman{Times New Roman}
+\newcommand{\mainfont}{\timesnewroman\fontsize{30pt}{36pt}\selectfont} % Increased from 20pt/30pt
+\newcommand{\boldfont}[1]{{\timesnewroman\fontseries{b}\selectfont #1}}
+
+% Hymn environment
+\newenvironment{hymn}[2]{%
+  \needspace{10\baselineskip}%
+  \setchorusline{}
+  \markboth{#2}{#2}%
+}{%
+  \vspace{1em}%
+  \setcounter{versenumber}{0}
+}
+
+% Title block: hymn number and title in larger Times New Roman
+\newcommand{\hymntitlewithdropcap}[2]{%
+  \begin{minipage}[t]{\columnwidth}%
+    \raggedright
+    {\timesnewroman\fontseries{b}\fontsize{50pt}{72pt}\selectfont #1}\hspace{0.5em} % Increased from 50pt/60pt
+    {\timesnewroman\fontshape{it}\fontsize{15pt}{16pt}\selectfont #2}\par\vspace{0.5em} % Added explicit 36pt size
+  \end{minipage}%
+}
+
+\makeatletter
+\newcommand{\chorusline}{} % Declare globally
+\newcommand{\setchorusline}[1]{%
+  \gdef\chorusline{#1}% Global definition
+}
+\makeatother
+
+% Flag to track stanzas
+\newcounter{versenumber}
+
+\newenvironment{stanza}{%
+  \stepcounter{versenumber}%
+  \needspace{6\baselineskip}%
+  \begin{minipage}[t]{\columnwidth}%
+  \setlength{\parindent}{0pt}%
+  \ignorespaces
+  \noindent\boldfont{\arabic{versenumber}}\hspace{0.1em}%
+}{%
+  \par
+  \ifnum\value{versenumber}>1
+    \ifx\chorusline\empty
+      % If chorusline is empty, do nothing
+    \else
+      \par\hspace{2em}\boldfont{\textquotedblleft \chorusline...\textquotedblright}
+    \fi
+  \fi
+  \end{minipage}\noindent
+}
+
+% Chorus environment
+\newenvironment{chorus}{%
+  \needspace{6\baselineskip}%
+  \raggedright\setlength{\parindent}{0pt}\vspace{0.5em}%
+  \boldfont\bgroup
+}{%
+  \egroup\vspace{0.5em}\par
+}
+
+% Hymn lookup commands
+\newcommand{\hymnlookup}[2]{%
+  \mainfont\noindent
+  \parbox{\columnwidth}{%
+    #1%
+    \leaders\hbox{.}\hfill
+    #2%
+  }\\
+}
+
+\newcommand{\hymnlookupchorus}[2]{%
+  \mainfont\noindent
+  \parbox{\columnwidth}{%
+    \MakeUppercase{#1}%
+    \leaders\hbox{.}\hfill
+    #2%
+  }\\
+}
