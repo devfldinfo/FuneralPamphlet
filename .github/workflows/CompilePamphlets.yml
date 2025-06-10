@@ -9,6 +9,9 @@ on:
       - 'input/**/start.start'
   workflow_dispatch:
 
+permissions:
+  contents: write  # Grant write access for committing and pushing
+
 jobs:
   compile:
     runs-on: ubuntu-latest
