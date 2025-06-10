@@ -1,0 +1,24 @@
+name: List Installed Fonts
+
+on:
+  workflow_dispatch:  # Allows you to trigger the workflow manually from GitHub UI
+
+jobs:
+  list-fonts:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: List installed fonts
+        run: |
+          echo "Listing all installed fonts..."
+          fc-list : family | sort | uniq > installed-fonts.txt
+          cat installed-fonts.txt
+
+      - name: Upload font list as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: installed-fonts
+          path: installed-fonts.txt
