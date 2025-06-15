@@ -1,44 +1,108 @@
-- name: Compile LaTeX Files
+name: Compile LaTeX Files
+
+on:
+  push:
+    paths:
+      - 'input/**/start.start' # Trigger on push to start.start files in input/ subdirectories
+  pull_request:
+    paths:
+      - 'input/**/start.start' # Trigger on pull request to start.start files in input/ subdirectories
+  workflow_dispatch: # Allows manual trigger from GitHub UI
+
+permissions:
+  contents: write  # Grant write access for committing and pushing generated PDFs
+
+jobs:
+  compile:
+    runs-on: ubuntu-latest # Run the job on a fresh Ubuntu virtual machine
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4 # Downloads your repository's code
+
+      - name: Install LaTeX and PDF Utilities
         run: |
+          # Update package lists
+          sudo apt-get update
+          # Install TeX Live full distribution, Biber for bibliography, and other utilities
+          # 'pdfjam' is useful for booklet generation if uncommented later
+          sudo apt-get install -y texlive-full biber texlive-extra-utils
+
+      - name: Create Output Directory
+        run: mkdir -p output # Ensures the output directory exists for compiled files
+
+      - name: Compile LaTeX Files
+        run: |
+          # Loop through each .txt file in the 'input' directory
           for file in input/*.txt; do
+            # Extract the base name (filename without .txt extension)
             original_base_name=$(basename "$file" .txt)
-            target_tex_file="output/${original_base_name}.tex" # The .tex file we'll compile
-            target_pdf_file="output/${original_base_name}.pdf" # The final PDF name expected
+            # Define the temporary .tex file path for compilation within 'output'
+            target_tex_file="output/${original_base_name}.tex"
+            # Define the expected final PDF file path
+            target_pdf_file="output/${original_base_name}.pdf"
 
-            echo "Processing input file: $file"
-            echo "Temporary .tex file for compilation: $target_tex_file"
-            echo "Expected output PDF: $target_pdf_file"
+            echo "--- Processing: $file ---"
+            echo "  Temp .tex for compilation: $target_tex_file"
+            echo "  Expected output PDF: $target_pdf_file"
 
-            # Step 1: Copy the .txt content to a .tex file in the output directory
+            # Step 1: Copy the .txt content to a .tex file in the output directory.
+            # This ensures the compiler receives a standard .tex extension.
             cp "$file" "$target_tex_file"
 
-            # Step 2: Run LuaLaTeX (first pass)
-            # Use '//' prefix to tell LuaLaTeX to interpret the path literally,
-            # handling special characters like '~' and multiple '.'
+            # Step 2: Run LuaLaTeX (first pass).
+            # The '//' prefix tells LuaLaTeX to treat the filename literally,
+            # handling special characters like '~' and multiple periods correctly.
             lualatex -interaction=nonstopmode "//${target_tex_file}"
 
-            # Step 3: If .bcf file exists, run Biber
-            # Biber also needs the literal path/basename
+            # Step 3: If a .bcf file exists, run Biber for bibliography processing.
+            # Biber also needs the literal base name from the .tex file.
             if [ -f "output/${original_base_name}.bcf" ]; then
-              echo "Running Biber for ${original_base_name}"
+              echo "  Running Biber for ${original_base_name}"
               biber "output/${original_base_name}"
             fi
 
-            # Step 4: Second LuaLaTeX run
+            # Step 4: Second LuaLaTeX run (to incorporate bibliography/references)
             lualatex -interaction=nonstopmode "//${target_tex_file}"
 
-            # Step 5: Third LuaLaTeX run
+            # Step 5: Third LuaLaTeX run (to finalize references, if needed)
             lualatex -interaction=nonstopmode "//${target_tex_file}"
 
-            # --- Validation and Cleanup for current file ---
+            # --- Validation and Cleanup for the current file ---
             if [ ! -f "$target_pdf_file" ]; then
+              # If PDF was not created, log an error and fail the workflow step
               echo "::error file=$file::PDF file ($target_pdf_file) was NOT created successfully for input $file."
-              exit 1 # Fail the step if PDF is not found
+              exit 1
             else
-              echo "Successfully created $target_pdf_file"
+              echo "  Successfully created $target_pdf_file"
             fi
 
-            # Clean up the temporary .tex file after compilation for this specific pamphlet
+            # Clean up the temporary .tex file that was copied into 'output'
             rm "$target_tex_file"
 
+            echo "--- Finished processing: $file ---"
           done
+
+      # Note: The commented-out 'Rename output PDF' and 'Generate Booklet PDFs'
+      # steps from your original script are left commented here as they were.
+      # If you wish to use them, uncomment and ensure `pdfjam` is installed.
+
+      - name: Delete Temporary LaTeX Files
+        # Removes various auxiliary files generated by LaTeX compilation from the 'output' directory.
+        run: rm -f output/*.{aux,log,lof,lot,toc,bbl,blg,out,synctex.gz,fdb_latexmk,fls,bcf,run.xml}
+
+      - name: Auto Commit PDFs
+        # Automatically commits and pushes the newly generated PDF files to the repository.
+        # Use '--force' with caution, as it can overwrite history.
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Compiled LaTeX files"
+          push_options: '--force'
+          file_pattern: 'output/*.pdf'
+
+      - name: Upload PDFs
+        # Uploads the compiled PDFs as a workflow artifact, making them downloadable from the workflow run.
+        uses: actions/upload-artifact@v4
+        with:
+          name: compiled-pamphlets
+          path: output/*.pdf # Path to the PDFs to be uploaded
