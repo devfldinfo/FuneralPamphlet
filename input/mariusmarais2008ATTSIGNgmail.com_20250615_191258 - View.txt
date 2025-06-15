@@ -1,0 +1,165 @@
+
+\documentclass[15pt]{article}
+\usepackage{FP}
+\usepackage{graphicx}
+\usepackage{multicol}
+\begin{document}
+
+\begin{titlepage}
+  \centering
+  \vspace*{0.1\textheight}
+  {\fontsize{60}{72}\selectfont \bfseries Marius Marais \par}
+  \vspace{0.1\textheight}
+  \includegraphics[height=0.3\textheight,keepaspectratio]{input/image.jpg}
+  \par\vspace{0.1\textheight}
+  {\huge 12/10/1979-01/01/2025 \par}
+\end{titlepage}
+
+\clearpage
+\begin{multicols}{2}
+\setlength{\columnseprule}{0.3pt}
+\begin{hymn}{23}{God's word is so pure}
+\hymntitlewithdropcap{23}{God's word is so pure...\#29}
+\begin{stanza}
+Izwi leNkosi ligugu lingcwele,\\
+Ngithanda iz'fundo zalo,\\
+Lingikhanyisela indlela yami,\\
+Luze luphele uhambo.
+\end{stanza}
+\begin{chorus}
+\setchorusline{Kudlula konke okwasemhlabeni,}
+Kudlula konke okwasemhlabeni,\\
+Kukuhle kunegolide,\\
+Ukuhlala ngasez'nyaweni zaKhe,\\
+Ngizwe Ekhuluma kimi.
+\end{chorus}
+\begin{stanza}
+Imnandi, inhle indlela yeNkosi\\
+La ngibuswa nguMsindisi;\\
+Izwi Alishoyo liyaphilisa,\\
+Lingivuselela njalo.
+\end{stanza}
+\begin{stanza}
+Ngiyezwa, ngilalele, ngikhululwe\\
+Ukulandela uJesu;\\
+Ngigcina izwi laKhe enhliz'yweni,\\
+NgiMdumise ngenjabulo.
+\end{stanza}
+\begin{stanza}
+Ngiqinise ezimisweni zaKho,\\
+Ngithande umthetho waKho;\\
+Nkosi, thobisa inhliziyo yami\\
+Ukuzindla ngawo njalo.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{44}{I was a wandering sheep}
+\hymntitlewithdropcap{44}{I was a wandering sheep}
+\begin{stanza}
+Ngazula njengemvu\\
+Kude nesibaya;\\
+NgingaMthandi uMelusi,\\
+Ngala ukukhuzwa;\\
+Ngangingalaleli,\\
+Ngingathand' ikhaya,\\
+Ngingathand' izwi leNkosi,\\
+Ngathand' ukuzula.
+\end{stanza}
+\begin{stanza}
+Ngafunwa nguYena,\\
+UMelusi wami,\\
+Ngafunwa ezigodini\\
+Nasezintabeni:\\
+Ngafunyanwa ngifa\\
+Yindlala, ngingedwa;\\
+Ngaboshwa luthando lwaKhe,\\
+Ngaze ngasindiswa.
+\end{stanza}
+\begin{stanza}
+Ngathandwa nguJesu,\\
+UMelusi wami;\\
+Wangihlanza egazini,\\
+Wangiphulukisa;\\
+Ngafunwa, ngatholwa\\
+Ngisekude naYe,\\
+Ngangeniswa es'bayeni\\
+NguYe onguMlondi.
+\end{stanza}
+\begin{stanza}
+Ngazula njengemvu,\\
+Ngala ukuphathwa;\\
+Konke sekukusha manje,\\
+Ngithanda is'baya.\\
+Kade nginenkani\\
+Ngisazulazula;\\
+Manje senginoMelusi\\
+NgiMthobela njalo.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{102}{How clear the call of Jesus}
+\hymntitlewithdropcap{102}{How clear the call of Jesus...\#147}
+\begin{stanza}
+UJesu usibiza\\
+Ngezwi elimnandi:\\
+``Woza, okhatheleyo,\\
+Phumuza iz'nyawo;\\
+Ngizokuthethelela,\\
+Ngikuhole kahle,\\
+Ngasemanzin' empilo,\\
+Ube nokuthula.''
+\end{stanza}
+\begin{stanza}
+UngaMali uJesu;\\
+Uyithemba lakho;\\
+Wokuma phambi kwaKhe\\
+Ngosuk' oluzayo,\\
+Lapho izizwe zonke\\
+Zizokwahlulelwa,\\
+Bonke abaMdelela\\
+Behlelwe luvalo.
+\end{stanza}
+\begin{stanza}
+UJesu usabiza\\
+Ngobubele baKhe,\\
+UngaMnqabi uMoya\\
+UngaMfulatheli;\\
+Izinsuku zidlula\\
+Njengenkungu ngokusa;\\
+Wosala yini phandle\\
+Kwesibaya saKhe?
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{145}{Jesus trod the pathway}
+\hymntitlewithdropcap{145}{Jesus trod the pathway...\#363}
+\begin{stanza}
+UMhlengi wasandulela wangena\\
+Enkaz'mulweni yezulu;\\
+Uma sakha phezu kwaleli Dwala\\
+Nathi sogcinela khona.
+\end{stanza}
+\begin{chorus}
+\setchorusline{Nemihla niyazinikela, Mhleni,}
+Nemihla niyazinikela, Mhleni,\\
+Ngisize ngiKulandele;\\
+Ungiphe amandla okuqhubeka\\
+Nomusa onganeleyo.
+\end{chorus}
+\begin{stanza}
+Yena Wanikela ngempilo yaKhe,\\
+Wathwala isiphambano\\
+Ngenxa yethu, Enganaki ihlazo,\\
+Enza intando kaYise.
+\end{stanza}
+\begin{stanza}
+Sizimisele siqede ibanga\\
+Noma izwe lisibhuqa;\\
+Sithembeke kuJesu mihla yonke\\
+Sohlala naYe phakade.
+\end{stanza}
+\end{hymn}
+
+
+\end{multicols}
+\end{document}
