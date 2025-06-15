@@ -1,0 +1,365 @@
+
+\documentclass[15pt]{article}
+\usepackage{FP}
+\usepackage{graphicx}
+\usepackage{multicol}
+\begin{document}
+
+\begin{titlepage}
+  \centering
+  \vspace*{0.1\textheight}
+  {\fontsize{60}{72}\selectfont \bfseries .amdj dbehe \par}
+  \vspace{0.1\textheight}
+  \includegraphics[height=0.3\textheight,keepaspectratio]{input/image.jpg}
+  \par\vspace{0.1\textheight}
+  {\huge sjsjd 344 \par}
+\end{titlepage}
+
+\clearpage
+\begin{multicols}{2}
+\setlength{\columnseprule}{0.3pt}
+\begin{hymn}{38}{NdiyaMva, Uyabiza}
+\hymntitlewithdropcap{38}{NdiyaMva, Uyabiza...\#77}
+\begin{stanza}
+Ndinqwenela ukuhamba\\
+NgendlelakaThixo wam.\\
+Ndiva Ebiza, ``Yiza kum.''\\
+Ngovuyo ndiyalandela.
+\end{stanza}
+\begin{chorus}
+\setchorusline{NdiyaMva, Uyabiza,}
+NdiyaMva, Uyabiza,\\
+Koko kundithimbileyo.\\
+Ndingxamele ukuhamba\\
+Ngendlela yaboo nyulwayo.
+\end{chorus}
+\begin{stanza}
+Andoyiki abagxeki.\\
+NdiMlindele ngethemba.\\
+Andincede endleleni\\
+Ndide ndiyokuphumla.
+\end{stanza}
+\begin{stanza}
+Kutsawula imithombo,\\
+Xa ndibon'idini laKhe.\\
+Mandibe lidini kuWe\\
+Nkosi, ngomphefumlo wam.
+\end{stanza}
+\begin{stanza}
+Noba umtyholi esilwa\\
+Ndimi ngethemba elithi,\\
+Izwi likaBawo lithi,\\
+Uvuye, uya koyisa.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{25}{God has always laboured}
+\hymntitlewithdropcap{25}{God has always laboured...\#35}
+\begin{stanza}
+Modimo O sa rata go lemotsha\\
+Batho Tsela ee is[ang] 'tshel[ông] tota.\\
+O rata gore Jesu O tshelêlê\\
+Mo pel[ung] tsa batho ba One fatsh[eng].
+\end{stanza}
+\begin{chorus}
+\setchorusline{Tsholofelô ya go bolokwa}
+Tsholofelô ya go bolokwa\\
+Ke Jesu mo pel[ung] tsa rona.\\
+Re na le go Mo ipôlêla\\
+Ka mafoko le ditiro ka metlha.
+\end{chorus}
+\begin{stanza}
+Selekanya sa rona ga se ba b[ang]'.\\
+Mafoko a Modimo a re ruta;\\
+Tirô tsa tshiamo tsa rona di nntse\\
+Fela jaaka seaparô se '\textasciitilde{}\textasciitilde{}maswê.
+\end{stanza}
+\begin{stanza}
+Ha o rata go tlhamalla botshel[ông]\\
+Se tshabe go ineela '\textasciitilde{}\textasciitilde{}go Modimo.\\
+O tlaa go êma nok[êng] ka gale ha\\
+O Mo tshola pel[ung] jaaka Morêna.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{113}{Bwana utusaidie}
+\hymntitlewithdropcap{113}{Bwana utusaidie...\#202}
+\begin{stanza}
+Bwana utusaidie\\
+Kwa neema na nguvu zako,\\
+Tu[am]she mioyo tuombe,\\
+Adui wasitushinde.
+\end{stanza}
+\begin{chorus}
+\setchorusline{Japo tunahofu adui,}
+Japo tunahofu adui,\\
+Twapenda njia ya Yesu,\\
+Tumaini letu ni Mungu,\\
+Twaenda kwa nguvu zake.
+\end{chorus}
+\begin{stanza}
+Tupe busara mioyoni,\\
+Tusaidie tuwaombee,\\
+Wale walio gizani,\\
+Watambue haja zao.
+\end{stanza}
+\begin{stanza}
+Imiliki mioyo yetu,\\
+Tujaze hekima yako,\\
+Nasi tujikane ili\\
+Tubainishe uhai wako.
+\end{stanza}
+\begin{stanza}
+Nani tunaye mbinguni\\
+Hata duniani ila,\\
+Wewe Bwana wa huruma,\\
+U rafiki mwaminifu.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{26}{No reputation}
+\hymntitlewithdropcap{26}{No reputation...\#408}
+\begin{stanza}
+Ha ho thoriso ke na le Jesu;\\
+Ke lakatsa ho fetoha peo.\\
+A ntjale ke behe ditholwana.\\
+Ke tla fumana moqhak'a Kganya.
+\end{stanza}
+\begin{stanza}
+Ha Morena a se na thoriso\\
+Na nka hana ho hloriswa le nna?\\
+Fapano sa ka ke tla se jara,\\
+Yena A hole, mme nna ke bobe.
+\end{stanza}
+\begin{stanza}
+Ha ho thoriso bophel[ong] bohle;\\
+Ke lakatsa kganya e safel[eng]\\
+Hammoho le Jesu lehodim[ong];\\
+Basomi bohle ba tla kgutsiswa.
+\end{stanza}
+\begin{stanza}
+Ha ho thoriso, ha ho tlhompheho;\\
+Leha nka nyediswa ke ba 'fatshe,\\
+Ke amohelwa pela Modimo;\\
+Ke thabiswa ke kgopolo ena.
+\end{stanza}
+\begin{stanza}
+Ha ho thoriso, ke kgotsofetse;\\
+Ha thwe: ``Modimo ha o leshano.''\\
+Leha nka lahlehelwa ke 'phelo.\\
+Ke tla bo bona ka ho sa fel[eng].
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{163}{Lord, I would take Thy yoke}
+\hymntitlewithdropcap{163}{Lord, I would take Thy yoke...\#223}
+\begin{stanza}
+Ndoda kutora joko renyu, She,\\
+Ndidzidze kwamuri nounyoro;\\
+Zvinhu zvekare zvainakidza\\
+Hazvichina maturo kwandiri.
+\end{stanza}
+\begin{stanza}
+Ndoda kutora joko renyu, She,\\
+Nokudzidza zvounyoro hwenyu\\
+Pamakapfugama kushambidza\\
+Tsoka dzavadzidzi venyu vose.
+\end{stanza}
+\begin{stanza}
+Ndoda kutora joko renyu, She;\\
+Pakutambudzika ndidzidzisei,\\
+Ndigoti semi muGetsemani:\\
+``Kuda kwenyu kwega ngakuitwe.''
+\end{stanza}
+\begin{stanza}
+Ndoda kutora joko renyu, She,\\
+Pautsinye nenhema dzavanhu;\\
+Ndidzidze kukanganwira vamwe\\
+Sezvamakaita pam'chinjikwa.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{216}{Somtyds sit u en mymer}
+\hymntitlewithdropcap{216}{Somtyds sit u en mymer...\#133}
+\begin{stanza}
+Somtyds sit u en mymer\\
+En oor u lewe sug;\\
+Weet God wat dit gegee het,\\
+Eis dit weer eendag terug.
+\end{stanza}
+\begin{chorus}
+\setchorusline{Waarom nou nie}
+Waarom nou nie\\
+Alles Hom oorgee dat Hy u seën?\\
+Kom tog betyds, laat die Heer dan nou\\
+Sy liefd' en lewe in u bou.
+\end{chorus}
+\begin{stanza}
+Eendag meen u, dien u Hom,\\
+Maar Satan hou sy mag;\\
+Wins en plesier bekoor u,\\
+Gou daal 'n stikdonker nag.
+\end{stanza}
+\begin{stanza}
+Gods' liefde bied u redding;\\
+Sy krag ontneem die vrees,\\
+Sterk u en maak u diensbaar\\
+Wat ook u lotmag wees.
+\end{stanza}
+\begin{stanza}
+Wag nou nie meer tot ``Eendag''\\
+Kom, bied uself Hom aan;\\
+Vrede en vreugd', vergifnis,\\
+Gee God u nouvoortaan.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{20}{Net Christus Kan Tevrede Stel}
+\hymntitlewithdropcap{20}{Net Christus Kan Tevrede Stel...\#109}
+\begin{stanza}
+In U, o Heer het ek gevind,\\
+Gevind in U alleen,\\
+Die vree', geluk waarna ek soek;\\
+Die vreugde ongekend.
+\end{stanza}
+\begin{chorus}
+\setchorusline{Net Christus kan my tevrede stel,}
+Net Christus kan my tevrede stel,\\
+Geen ander naam vir my.\\
+Daar's liefde, lewe, sielsgenot,\\
+In Jesus te verkry!
+\end{chorus}
+\begin{stanza}
+Na rus en vreugd' het ek verlang,\\
+Maar nie na U, o Heer.\\
+Terwyl ek U verby wou gaan\\
+Het liefde my gekeer.
+\end{stanza}
+\begin{stanza}
+Leë vreugde het ek toe probeer;\\
+Die bronne stel teleur.\\
+Terwyl ek nog daarna wou reik,\\
+Word dors in my al meer.
+\end{stanza}
+\begin{stanza}
+Verlore vreugd' het ek beween,\\
+Maar nooit oor U getreur\\
+Totdat ek deur genade sien,\\
+U lieflikheid, o Heer.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{31}{Hymn 31 (Chewa)}
+\hymntitlewithdropcap{31}{Hymn 31 (Chewa)}
+\end{hymn}
+
+\begin{hymn}{62}{The way to Calv'ry's cross}
+\hymntitlewithdropcap{62}{The way to Calv'ry's cross...\#389}
+\begin{stanza}
+Yesu aipele\\
+Mu kushipikisha\\
+Mu nshila ya capindama\\
+Mpanga ya kwa Lesa.
+\end{stanza}
+\begin{chorus}
+\setchorusline{Mukate ulanga}
+Mukate ulanga\\
+Umubili wakwe;\\
+Mwangashi ulango\\
+Mulopa uwansumine.
+\end{chorus}
+\begin{stanza}
+Imembu sha calo\\
+Alishisendele,\\
+Afwile pa capindama,\\
+Alitulubwile.
+\end{stanza}
+\begin{stanza}
+Twasambwa ku membu\\
+Mu mulopa wakwe;\\
+Twalomba maka no luse,\\
+Tumutemwe sana.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{153}{My heart is resting}
+\hymntitlewithdropcap{153}{My heart is resting...\#244}
+\begin{stanza}
+Nkosi, ngiphumulé kuWe,\\
+Ngenhliziyo yonke\\
+Ngisemthonjeni wempilo\\
+Ngeneliswé kahle;\\
+Ngiyisitsha esib'thaka\\
+Es'gcwaliswa nguWe;\\
+Konk' okwezwe kwahluleka\\
+Uk'qeda ukoma.
+\end{stanza}
+\begin{stanza}
+Ngomel' amanzi empilo\\
+Aphuphuma kuWe,\\
+Nomcebo wothando lwaKho\\
+Odlula ukwazi;\\
+NgiKudumisa kabusha\\
+Ngomsa wakho, Nkosi.\\
+Makube udumo kuWe\\
+Manje naphakade.
+\end{stanza}
+\begin{stanza}
+Ngiyabonga nangez'khathi\\
+Ngehluleké kabi,\\
+Ngiziboné ngingelutho,\\
+Ngidinga umusa;\\
+Nokho, nginefa phesheya,\\
+Engiligcinelwa\\
+Yisandla esangophela\\
+Ukuba ngilidle.
+\end{stanza}
+\begin{stanza}
+Nkosi, ngiphumulé kuWe,\\
+Sengilondekile\\
+Ngayo yonke inhliziyo\\
+Ebongayo njalo,\\
+Kanye nesixuku sonke\\
+Sabahlengiweyo,\\
+SiKudumisa nanini\\
+Ngenxa yensindiso.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{326}{When sore afflictions}
+\hymntitlewithdropcap{326}{When sore afflictions}
+\begin{stanza}
+When sore afflictions press my soul,\\
+And darkness gathers o'er my way,\\
+I look above and trust in Him\\
+Who ever leads me night and day.
+\end{stanza}
+\begin{stanza}
+When gloomy fears possess my heart,\\
+I seek the shelter of His breast;\\
+Where all is peace and joy and light,\\
+In confidence I calmly rest.
+\end{stanza}
+\begin{stanza}
+What full provision God has made\\
+For those who daily seek His care;\\
+The pure in heart shall see His face,\\
+His ear is open to their prayer.
+\end{stanza}
+\begin{stanza}
+The race is not unto the swift,\\
+The strong no glories ever win;\\
+The secret of all victory is\\
+Obedience to the Christ within.
+\end{stanza}
+\begin{stanza}
+Then fainting not, I press along\\
+The path where He has gone before,\\
+The bloodstained path which leads to God,\\
+To heaven and home forevermore.
+\end{stanza}
+\end{hymn}
+
+
+\end{multicols}
+\end{document}
