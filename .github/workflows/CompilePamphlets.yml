@@ -22,7 +22,7 @@ jobs:
 
       - name: Install LaTeX and PDF Utilities
         run: |
-          sudo apt-get update 
+          sudo apt-get update
           sudo apt-get install -y texlive-latex-base texlive-latex-extra texlive-fonts-recommended texlive-xetex texlive-bibtex-extra biber texlive-extra-utils
 
       - name: Create Output Directory
@@ -31,43 +31,69 @@ jobs:
       - name: Compile LaTeX Files
         run: |
           for file in input/*.txt; do
-            base_name=$(basename "$file" .txt)
+            original_base_name=$(basename "$file" .txt)
+            target_tex_file="output/${original_base_name}.tex" # The .tex file we'll compile
+            target_pdf_file="output/${original_base_name}.pdf" # The final PDF name expected
 
-            # First LaTeX run (to generate .bcf and auxiliary files)
-            lualatex -interaction=nonstopmode -output-directory=output "$file"
+            echo "Processing input file: $file"
+            echo "Temporary .tex file for compilation: $target_tex_file"
+            echo "Expected output PDF: $target_pdf_file"
 
-            # If .bcf file exists, run Biber
-            if [ -f "output/$base_name.bcf" ]; then
-              biber output/"$base_name"
+            # Step 1: Copy the .txt content to a .tex file in the output directory
+            # This makes sure the compiler gets a .tex extension and all aux files
+            # are generated directly in 'output'.
+            cp "$file" "$target_tex_file"
+
+            # Step 2: Run LuaLaTeX (first pass)
+            # -output-directory=output is redundant if the .tex file is already in 'output'
+            # and we are running from root. The compiler will put files where the .tex is.
+            lualatex -interaction=nonstopmode "$target_tex_file"
+
+            # Step 3: If .bcf file exists, run Biber
+            # Biber needs the base name (without extension) from the .tex file,
+            # and it expects the .bcf file to be in the same directory as the .tex
+            if [ -f "output/${original_base_name}.bcf" ]; then
+              echo "Running Biber for ${original_base_name}"
+              biber "output/${original_base_name}"
             fi
 
-            # Second LaTeX run (to process citations and references)
-            lualatex -interaction=nonstopmode -output-directory=output "$file"
+            # Step 4: Second LuaLaTeX run
+            lualatex -interaction=nonstopmode "$target_tex_file"
 
-            # Third LaTeX run (to finalize references)
-            lualatex -interaction=nonstopmode -output-directory=output "$file"
+            # Step 5: Third LuaLaTeX run
+            lualatex -interaction=nonstopmode "$target_tex_file"
 
-            # Rename output PDF
-            #mv output/"$base_name.pdf" output/"$base_name - View.pdf"
-            done  
+            # --- Validation and Cleanup for current file ---
+            if [ ! -f "$target_pdf_file" ]; then
+              echo "::error file=$file::PDF file ($target_pdf_file) was NOT created successfully for input $file."
+              exit 1 # Fail the step if PDF is not found
+            else
+              echo "Successfully created $target_pdf_file"
+            fi
 
-    #  - name: Auto Commit PDFs
-    #     uses: stefanzweifel/git-auto-commit-action@v4
-    #    with:
-    #      commit_message: "Compiled LaTeX files with View and Print versions"
-    #      push_options: '--force'
-    #      file_pattern: 'output/*.pdf'
+            # Clean up the temporary .tex file after compilation for this specific pamphlet
+            rm "$target_tex_file"
 
-          
+          done
 
-     # - name: Generate Booklet PDFs
-     #   run: |
-     #     for pdf in output/*- View.pdf; do
-     #       base_name=$(basename "$pdf" " - View.pdf")
-     #       pdfjam --booklet true --landscape --paper a4paper "$pdf" --outfile "output/${base_name} - Print.pdf"
-     #     done  
+      # The following steps are outside the loop and will run once all files are processed.
+
+      #  - name: Auto Commit PDFs (Commented Out in original, but kept for context)
+      #     uses: stefanzweifel/git-auto-commit-action@v4
+      #    with:
+      #      commit_message: "Compiled LaTeX files with View and Print versions"
+      #      push_options: '--force'
+      #      file_pattern: 'output/*.pdf'
+
+      # - name: Generate Booklet PDFs (Commented Out in original, but kept for context)
+      #   run: |
+      #     for pdf in output/*- View.pdf; do
+      #       base_name=$(basename "$pdf" " - View.pdf")
+      #       pdfjam --booklet true --landscape --paper a4paper "$pdf" --outfile "output/${base_name} - Print.pdf"
+      #     done
 
       - name: Delete Temporary LaTeX Files
+        # This will clean up all remaining aux files from the output directory
         run: rm -f output/*.{aux,log,lof,lot,toc,bbl,blg,out,synctex.gz,fdb_latexmk,fls,bcf,run.xml}
 
       - name: Auto Commit PDFs
