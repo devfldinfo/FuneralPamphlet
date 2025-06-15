@@ -21,18 +21,39 @@ jobs:
         uses: actions/checkout@v4
 
 
-
-
       - name: Install LaTeX and PDF Utilities
-        uses: xu-cheng/latex-action@v2 # Using a different, robust LaTeX action
+        uses: xu-cheng/latex-action@v2
         with:
+          # Provide a dummy root_file that will exist in your repo,
+          # but won't be the actual target of compilation for this step.
+          # For example, you could create an empty file named '.github_dummy.tex'
+          # in your repository's root or .github folder.
+          root_file: '.github/dummy.tex' # <--- IMPORTANT: Create this dummy file!
+          # Ensure the compiler is lualatex as you use it in your loop
+          compiler: 'lualatex'
+          # Allow this action to continue even if the dummy file compilation fails,
+          # as its main purpose for you is environment setup.
+          continue_on_error: true
+
+      # Your existing 'Compile LaTeX Files' step will then run AFTER this,
+      # using the environment set up by xu-cheng/latex-action.
+
+
+
+
+
+
+
+ #     - name: Install LaTeX and PDF Utilities
+ #       uses: xu-cheng/latex-action@v2 # Using a different, robust LaTeX action
+ #       with:
           # This action typically uses a Docker image with TeX Live pre-installed.
           # You usually don't need a 'profile' or 'packages' input here
           # because the Docker image comes with a full TeX Live distribution.
           # The exact TeX Live version depends on the specific Docker image used by the action,
           # or you might be able to configure it via 'texlive_version' if the action supports it.
           # For most cases, the default image should contain what you need.
-          root_file: '' # This action also supports compiling directly, but we'll use your existing compile step
+  #        root_file: '' # This action also supports compiling directly, but we'll use your existing compile step
                         # Leave root_file blank to just set up the environment.
 
       # Keep your existing 'Compile LaTeX Files' step as is, it should work with this setup too.
