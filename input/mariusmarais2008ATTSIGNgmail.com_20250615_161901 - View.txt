@@ -1,0 +1,156 @@
+
+\documentclass[15pt]{article}
+\usepackage{FP}
+\usepackage{graphicx}
+\usepackage{multicol}
+\begin{document}
+
+\begin{titlepage}
+  \centering
+  \vspace*{0.1\textheight}
+  {\fontsize{60}{72}\selectfont \bfseries jhkgbvcdgmmmm \par}
+  \vspace{0.1\textheight}
+  \includegraphics[height=0.3\textheight,keepaspectratio]{input/image.jpg}
+  \par\vspace{0.1\textheight}
+  {\huge gjhghjxfgxf \par}
+\end{titlepage}
+
+\clearpage
+\begin{multicols}{2}
+\setlength{\columnseprule}{0.3pt}
+\begin{hymn}{2}{O tell me more}
+\hymntitlewithdropcap{2}{O tell me more...\#7}
+\begin{stanza}
+Phinda, ulande ngoMsindisi,\\
+Ngitshele ngaYe kabanzi,\\
+Ngomsa waKhe, nangensindiso;\\
+Ligugu igama laKhe.
+\end{stanza}
+\begin{chorus}
+\setchorusline{Mawuphinde ngengiMthanda,}
+Mawuphinde ngengiMthanda,\\
+Ngiholwe yisandla saKhe,\\
+Onamandla okungilonda,\\
+Ngize ngiMbone phezulu.
+\end{chorus}
+\begin{stanza}
+Ngitshele ngendaba emnandi,\\
+Eduduz' umoya wami;\\
+NgeNkosi yezulu ikhala\\
+Iz'nyembezi ngenxa yami.
+\end{stanza}
+\begin{stanza}
+Ngitshele ngaYe Othulisa\\
+Iz'vunguvungu zosizi;\\
+Ngemva komnyama kuzokusa\\
+Kwabasentandweni yaKhe.
+\end{stanza}
+\begin{stanza}
+Ngitshele ngokubuya kwaKhe,\\
+OyiNkosi yokuthula;\\
+Woza, Mhlengi, uphelelise\\
+Umsebenzi siKubonge.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{39}{Lord Jesus, lead}
+\hymntitlewithdropcap{39}{Lord Jesus, lead...\#46}
+\begin{stanza}
+Nkosi Jesu, hola, ngingaduki;\\
+Bamb' isandla!\\
+Ngesaba ukuwa endleleni;\\
+Bamb' isandla!\\
+Ngivama ukuduka Ungekho,\\
+Ngiqondise, hleze ngilahleke.
+\end{stanza}
+\begin{stanza}
+Nkosi, Ungithandé; Ungaphezi,\\
+Ngenze msulwa;\\
+Thobisa ukuzazi nenkani,\\
+Ngiqonde ngqo.\\
+Nxa ngingaKudumisa ngempilo,\\
+Kuyinzuzo kimi naphakade.
+\end{stanza}
+\begin{stanza}
+Nxa Ungangisebenzisa, Nkosi,\\
+Ngamukele;\\
+NguWe Owabethelwa emthini,\\
+Wangifela;\\
+Unami nom' ameva ehlaba.\\
+Ngenze ngingaduki endleleni.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{400}{When Jesus comes}
+\hymntitlewithdropcap{400}{When Jesus comes}
+\begin{stanza}
+When Jesus comes to reward His servants,\\
+Whether it be noon or night,\\
+Faithful to Him will He find us watching,\\
+With our lamps all trimmed and bright?
+\end{stanza}
+\begin{chorus}
+\setchorusline{Oh, can we say we are truly ready,}
+Oh, can we say we are truly ready,\\
+Ready for the soul's long home?\\
+Say, will He find you and me still watching,\\
+Watching, waiting, when the Lord shall come?
+\end{chorus}
+\begin{stanza}
+If at the dawn of the early morning\\
+He shall call us one by one -\\
+When to the Lord we restore our talents,\\
+Will He answer us "Well done!"
+\end{stanza}
+\begin{stanza}
+Have we been true to the trust He left us?\\
+Do we seek to do our best?\\
+If in our hearts there is naught condemns us,\\
+We shall have a glorious rest.
+\end{stanza}
+\begin{stanza}
+blessèd are those whom the Lord finds watching -\\
+In His glory they shall share;\\
+If He should come at the dawn or midnight,\\
+Will He find us watching there?
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{47}{Ek het Jesus altyd nodig}
+\hymntitlewithdropcap{47}{Ek het Jesus altyd nodig...\#85}
+\begin{stanza}
+Ek het Jesus altyd nodig,\\
+Want alleen durf ek nie gaan.\\
+Ek moet weet dat Hy my bystaan\\
+Met sy arm om my geslaan.
+\end{stanza}
+\begin{chorus}
+\setchorusline{Dan hoef ek geen kwaad te vrees,}
+Dan hoef ek geen kwaad te vrees,\\
+Laat Hy lei waar Hy ook wil,\\
+Sonder klagte en gewillig\\
+Waar Hy gaan daar volg ek stil.
+\end{chorus}
+\begin{stanza}
+Ek het Jesus altyd nodig,\\
+My geloof hoe sterk, gering.\\
+Hy kan fluister troosryk' woorde\\
+Soos geen ander stem kan sing.
+\end{stanza}
+\begin{stanza}
+Ek het Jesus altyd nodig,\\
+Hy moet help om aan te gaan\\
+Deur die stormgety en sonskyn,\\
+Deur die stryd 'n weg te baan.
+\end{stanza}
+\begin{stanza}
+Ek het Jesus altyd nodig,\\
+Dat Hy my die weg kan wys.\\
+Tot die Doodsjordaan bereik word\\
+En die deining ek moet kruis.
+\end{stanza}
+\end{hymn}
+
+
+\end{multicols}
+\end{document}
