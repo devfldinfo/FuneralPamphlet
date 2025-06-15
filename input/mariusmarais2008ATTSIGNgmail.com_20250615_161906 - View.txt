@@ -1,0 +1,188 @@
+
+\documentclass[15pt]{article}
+\usepackage{FP}
+\usepackage{graphicx}
+\usepackage{multicol}
+\begin{document}
+
+\begin{titlepage}
+  \centering
+  \vspace*{0.1\textheight}
+  {\fontsize{60}{72}\selectfont \bfseries Piet Piet \par}
+  \vspace{0.1\textheight}
+  \includegraphics[height=0.3\textheight,keepaspectratio]{input/image.jpg}
+  \par\vspace{0.1\textheight}
+  {\huge 12dlkhsk \par}
+\end{titlepage}
+
+\clearpage
+\begin{multicols}{2}
+\setlength{\columnseprule}{0.3pt}
+\begin{hymn}{23}{Deur die nag van smart}
+\hymntitlewithdropcap{23}{Deur die nag van smart...\#334}
+\begin{stanza}
+Deur die nag van smart en twyfel\\
+Gaan die pelgrimsbende voort;\\
+Met 'n lied vol bly' verwagting;\\
+Hemel hul bestemmingsoord.
+\end{stanza}
+\begin{stanza}
+Helder deur die duister skynend\\
+Straal die lig wat leiding gee.\\
+Broederhand in hand van broeder\\
+Onbevrees die weg betree.
+\end{stanza}
+\begin{stanza}
+Diep bewus van God se bysyn:\\
+Dis soos dou wat op ons daal,\\
+Dit verdryf die vrees so somber.\\
+Met 'n glans ons pad bestraal.
+\end{stanza}
+\begin{stanza}
+Een die doelwit van ons reise;\\
+Een die onvermoeid' geloof;\\
+Een die oog wat blik na vore:\\
+Een die hoop. slegs een die Hoof.
+\end{stanza}
+\begin{stanza}
+Een die lied wat duisend tonge\\
+Hef soos uit die hart van een;\\
+Een die worst'ling teen die vyand;\\
+Een die weg deur God geseën.
+\end{stanza}
+\begin{stanza}
+Een die blydskap van verheuging\\
+Wat aan hemelkus ons wag;\\
+Een die Vader wat in liefde\\
+Heers tot laaste nageslag.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{314}{O give me rest}
+\hymntitlewithdropcap{314}{O give me rest}
+\begin{stanza}
+My Saviour, Thou hast offered rest;\\
+O give it, then, to me:\\
+The rest of ceasing from myself,\\
+To find my all in Thee.
+\end{stanza}
+\begin{stanza}
+This cruel self, oh, how it strives\\
+And works within my breast,\\
+To come between Thee and my soul,\\
+And keep me back from rest!
+\end{stanza}
+\begin{stanza}
+How many subtle forms it takes\\
+Of seeming verity,\\
+As if it were not safe to rest\\
+And venture all on Thee.
+\end{stanza}
+\begin{stanza}
+O Lord, I seek a holy rest,\\
+A victory over sin;\\
+I seek that Thou alone shouldst reign\\
+O'er all, without, within.
+\end{stanza}
+\begin{stanza}
+In Thy strong hand I lay me down:\\
+So shall the work be done;\\
+For who can work so wondrously\\
+As Thou, Almighty One?
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{216}{Thy perfect love}
+\hymntitlewithdropcap{216}{Thy perfect love}
+\begin{stanza}
+May Thy perfect love, O Lord,\\
+Burn strong within my heart,\\
+That I may in Thy truth abide\\
+And from all sin depart.
+\end{stanza}
+\begin{chorus}
+\setchorusline{O cause Thy perfect love}
+O cause Thy perfect love\\
+Within my heart to burn,\\
+That I may ne'er unfaithful be\\
+Nor from Thy pathway turn.
+\end{chorus}
+\begin{stanza}
+May Thy perfect love, O Lord,\\
+Inspire my soul each day\\
+To do Thy will and Thine alone;\\
+O give me grace alway.
+\end{stanza}
+\begin{stanza}
+As Thy perfect love, O Lord,\\
+Burns with a constant flame,\\
+I'll seek to glory in the cross\\
+And share my Master's shame.
+\end{stanza}
+\begin{stanza}
+May Thy perfect love unite\\
+Thy saints in every land,\\
+That they may all be one with Thee,\\
+Fulfilling Thy command.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{78}{O weary soul, God}
+\hymntitlewithdropcap{78}{O weary soul, God...\#159}
+\begin{stanza}
+Okhathele, uyabizwa\\
+Ngelizwi elinozwelo;\\
+Sukuma, phendula uthi:\\
+``Namhla, ngikhetha uKristu!''
+\end{stanza}
+\begin{stanza}
+Noma udukile kude\\
+NoMsindisi esonweni,\\
+UMphendule manje uthi:\\
+``Namhla, ngikhetha uKristu!''
+\end{stanza}
+\begin{stanza}
+Umphefum'lo ungehlale\\
+Endlini yawo yothuli;\\
+Ukufa kuzokubiza:\\
+``Sengiyakulanda wena!''
+\end{stanza}
+\begin{stanza}
+UJesu useseduze,\\
+UngaMyeki Akwedlule,\\
+Shesha uphendule uthi:\\
+``Namhla, ngikhetha uKristu!''
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{3}{As die Heiland roep}
+\hymntitlewithdropcap{3}{As die Heiland roep...\#129}
+\begin{stanza}
+As die Heiland roep, sal ons Hom wil sien?\\
+Kan ons sê? ``Heer, U het ek trou gedien.''\\
+Sal ons hoor van Hom? ``U was My getrou,\\
+Kom, beërf u Meester se vreugde nou.''
+\end{stanza}
+\begin{stanza}
+Bou ons hier `n huis op die rotsbank vas;\\
+As die storm dan loei en die reën neerplas?\\
+Sal dit altyddeur onbeweeglik bly.\\
+Selfs wanneer ons gaan na die ander sy?
+\end{stanza}
+\begin{stanza}
+Bou ons hier `n huis op die los dryfsand\\
+Is dit nie teen reën en die storm bestand?\\
+Ag hoe jammer tog as ons so gaan bou,\\
+Want vir altyd dan het ons diep berou.
+\end{stanza}
+\begin{stanza}
+Laat ons dus maar bou soos die Meester leer;\\
+Laat ons neem tot Hoof, net ons dierbaar' Heer,\\
+En ons volg Hom na, laat die wêreld hoon;\\
+Op die Rots gebou, word ons werk bekroon.
+\end{stanza}
+\end{hymn}
+
+
+\end{multicols}
+\end{document}
