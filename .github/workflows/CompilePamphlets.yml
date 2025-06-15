@@ -20,9 +20,28 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Install LaTeX and PDF Utilities # <--- MODIFIED STEP
-        uses: dante-ev/latex-action@latest
+
+
+
+      - name: Install LaTeX and PDF Utilities
+        uses: xu-cheng/latex-action@v2 # Using a different, robust LaTeX action
         with:
+          # This action typically uses a Docker image with TeX Live pre-installed.
+          # You usually don't need a 'profile' or 'packages' input here
+          # because the Docker image comes with a full TeX Live distribution.
+          # The exact TeX Live version depends on the specific Docker image used by the action,
+          # or you might be able to configure it via 'texlive_version' if the action supports it.
+          # For most cases, the default image should contain what you need.
+          root_file: '' # This action also supports compiling directly, but we'll use your existing compile step
+                        # Leave root_file blank to just set up the environment.
+
+      # Keep your existing 'Compile LaTeX Files' step as is, it should work with this setup too.
+ 
+ 
+
+ #     - name: Install LaTeX and PDF Utilities # <--- MODIFIED STEP
+ #       uses: dante-ev/latex-action@latest
+ #       with:
           # The 'profile' defines the installation scheme.
           # 'full' (or 'scheme-full') is comprehensive and covers your previous apt-get packages.
           # The main benefit here is the caching mechanism, not necessarily a smaller install.
@@ -31,7 +50,7 @@ jobs:
           # packages: >
           #   latex-base latex-extra fonts-recommended xetex
           #   bibtex-extra biber extra-utils
-          profile: 'full' # Using 'full' to ensure all your previously installed components are present
+ #         profile: 'full' # Using 'full' to ensure all your previously installed components are present
           # You can also specify the TeX Live year if needed, e.g., 'texlive-year: 2023'
 
       - name: Create Output Directory
