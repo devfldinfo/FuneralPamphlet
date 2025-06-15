@@ -1,4 +1,4 @@
-      - name: Compile LaTeX Files
+- name: Compile LaTeX Files
         run: |
           for file in input/*.txt; do
             original_base_name=$(basename "$file" .txt)
