@@ -3,11 +3,11 @@ name: Compile LaTeX Files
 on:
   push:
     paths:
-      - 'input/**/start.start'
+      - 'input/start.start'
   pull_request:
     paths:
-      - 'input/**/start.start'
-  workflow_dispatch:
+      - 'input/start.start'
+  workflow_dispatch:  
 
 permissions:
   contents: write  # Grant write access for committing and pushing
@@ -15,6 +15,22 @@ permissions:
 jobs:
   compile:
     runs-on: ubuntu-latest
+    if: |
+      github.event_name == 'workflow_dispatch' || # Always run for manual triggers
+      (github.event_name == 'push' &&
+        # Checks if 'input/start.start' is among the files added in any commit of this push.
+        # This flattens the 'added' arrays from all commits and checks for inclusion.
+        fromJSON(toJSON(github.event.commits.*.added)).flat().includes('input/start.start')
+      )
+      # Note: For 'pull_request' events, the event payload does not directly provide
+      # a list of added/removed files in the same way 'push' events do.
+      # Checking for 'added' files in a PR would require making a GitHub API call
+      # within a separate step, which adds significant complexity.
+      # Currently, this 'if' condition will NOT trigger for pull requests when
+      # only 'input/start.start' is added via PR unless an API check is implemented.
+      # If you need 'pull_request' additions to trigger, please specify.
+
+    
 
     steps:
       - name: Checkout Repository
