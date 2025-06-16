@@ -15,23 +15,29 @@ permissions:
 jobs:
   compile:
     runs-on: ubuntu-latest
-    if: |
-      github.event_name == 'workflow_dispatch' || # Always run for manual triggers
-      (github.event_name == 'push' &&
-        # Check if 'input/start.start' is among the files ADDED
-        fromJSON(toJSON(github.event.commits.*.added)).flat().includes('input/start.start') &&
-        # AND ensure 'input/start.start' is NOT among the files REMOVED in the same push
-        !fromJSON(toJSON(github.event.commits.*.removed)).flat().includes('input/start.start')
-      )
-      # Note: For 'pull_request' events, the event payload does not directly provide
-      # a list of added/removed files in the same way 'push' events do.
-      # Checking for 'added' files in a PR would require making a GitHub API call
-      # within a separate step, which adds significant complexity.
-      # Currently, this 'if' condition will NOT trigger for pull requests when
-      # only 'input/start.start' is added via PR unless an API check is implemented.
-      # If you need 'pull_request' additions to trigger, please specify.
+    # --- TEMPORARILY REMOVE THE 'if' CONDITION FOR DEBUGGING ---
+    # We remove this so the job always runs and we can see the debug output.
+    # After debugging, we will put it back.
+    # if: |
+    #   github.event_name == 'workflow_dispatch' ||
+    #   (github.event_name == 'push' &&
+    #     fromJSON(toJSON(github.event.commits.*.added)).flat().includes('input/start.start') &&
+    #     !fromJSON(toJSON(github.event.commits.*.removed)).flat().includes('input/start.start')
+    #   )
 
     steps:
+      - name: Debug - Print GitHub Event Payload
+        run: |
+          echo "GitHub Event Name: ${{ github.event_name }}"
+          echo "--- Raw GitHub Event (GITHUB_EVENT_PATH) ---"
+          cat "$GITHUB_EVENT_PATH" | jq . # jq is a JSON processor, helpful for readable output
+          echo "--- Content of github.event.commits.*.added ---"
+          echo "${{ toJSON(github.event.commits.*.added) }}" | jq .
+          echo "--- Content of github.event.commits.*.removed ---"
+          echo "${{ toJSON(github.event.commits.*.removed) }}" | jq .
+          echo "--- Finished debug print ---"
+        shell: bash # Ensure bash is used for jq and shell commands
+
       - name: Checkout Repository
         uses: actions/checkout@v4
 
@@ -47,23 +53,12 @@ jobs:
         run: |
           for file in input/*.txt; do
             base_name=$(basename "$file" .txt)
-
-            # First LaTeX run (to generate .bcf and auxiliary files)
             lualatex -interaction=nonstopmode -output-directory=output "$file"
-
-            # If .bcf file exists, run Biber
             if [ -f "output/$base_name.bcf" ]; then
               biber output/"$base_name"
             fi
-
-            # Second LaTeX run (to process citations and references)
             lualatex -interaction=nonstopmode -output-directory=output "$file"
-
-            # Third LaTeX run (to finalize references)
             lualatex -interaction=nonstopmode -output-directory=output "$file"
-
-            # Rename output PDF
-            #mv output/"$base_name.pdf" output/"$base_name - View.pdf"
           done
 
       - name: Delete Temporary LaTeX Files
