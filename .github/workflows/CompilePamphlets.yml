@@ -7,10 +7,10 @@ on:
   pull_request:
     paths:
       - 'input/start.start'
-  workflow_dispatch:  
+  workflow_dispatch:
 
 permissions:
-  contents: write  # Grant write access for committing and pushing
+  contents: write
 
 jobs:
   compile:
@@ -18,9 +18,10 @@ jobs:
     if: |
       github.event_name == 'workflow_dispatch' || # Always run for manual triggers
       (github.event_name == 'push' &&
-        # Checks if 'input/start.start' is among the files added in any commit of this push.
-        # This flattens the 'added' arrays from all commits and checks for inclusion.
-        fromJSON(toJSON(github.event.commits.*.added)).flat().includes('input/start.start')
+        # Check if 'input/start.start' is among the files ADDED
+        fromJSON(toJSON(github.event.commits.*.added)).flat().includes('input/start.start') &&
+        # AND ensure 'input/start.start' is NOT among the files REMOVED in the same push
+        !fromJSON(toJSON(github.event.commits.*.removed)).flat().includes('input/start.start')
       )
       # Note: For 'pull_request' events, the event payload does not directly provide
       # a list of added/removed files in the same way 'push' events do.
@@ -30,15 +31,13 @@ jobs:
       # only 'input/start.start' is added via PR unless an API check is implemented.
       # If you need 'pull_request' additions to trigger, please specify.
 
-    
-
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
       - name: Install LaTeX and PDF Utilities
         run: |
-          sudo apt-get update 
+          sudo apt-get update
           sudo apt-get install -y texlive-latex-base texlive-latex-extra texlive-fonts-recommended texlive-xetex texlive-bibtex-extra biber texlive-extra-utils
 
       - name: Create Output Directory
@@ -65,23 +64,7 @@ jobs:
 
             # Rename output PDF
             #mv output/"$base_name.pdf" output/"$base_name - View.pdf"
-            done  
-
-    #  - name: Auto Commit PDFs
-    #     uses: stefanzweifel/git-auto-commit-action@v4
-    #    with:
-    #      commit_message: "Compiled LaTeX files with View and Print versions"
-    #      push_options: '--force'
-    #      file_pattern: 'output/*.pdf'
-
-          
-
-     # - name: Generate Booklet PDFs
-     #   run: |
-     #     for pdf in output/*- View.pdf; do
-     #       base_name=$(basename "$pdf" " - View.pdf")
-     #       pdfjam --booklet true --landscape --paper a4paper "$pdf" --outfile "output/${base_name} - Print.pdf"
-     #     done  
+          done
 
       - name: Delete Temporary LaTeX Files
         run: rm -f output/*.{aux,log,lof,lot,toc,bbl,blg,out,synctex.gz,fdb_latexmk,fls,bcf,run.xml}
