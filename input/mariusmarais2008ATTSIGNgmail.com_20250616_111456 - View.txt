@@ -1,0 +1,421 @@
+
+\documentclass[15pt]{article}
+\usepackage{FP}
+\usepackage{graphicx}
+\usepackage{multicol}
+\begin{document}
+
+\begin{titlepage}
+  \centering
+  \vspace*{0.1\textheight}
+  {\fontsize{60}{72}\selectfont \bfseries Marius Marais v2 \par}
+  \vspace{0.1\textheight}
+  \includegraphics[height=0.3\textheight,keepaspectratio]{input/1000068478.jpg}
+  \par\vspace{0.1\textheight}
+  {\huge 12/10/1979-01/01/2025 \par}
+\end{titlepage}
+
+\clearpage
+\begin{multicols}{2}
+\setlength{\columnseprule}{0.3pt}
+\begin{hymn}{11}{Yehla iNkosi}
+\hymntitlewithdropcap{11}{Yehla iNkosi...\#20}
+\begin{stanza}
+Yehla iNkosi\\
+Isuka ezulwini,\\
+UMhlanguli;\\
+Ngothando lwaKhe.\\
+Iintlungu nosizi,\\
+UYesu waziva ke;\\
+Wafela aboni,\\
+Kwawena nam.
+\end{stanza}
+\begin{chorus}
+\setchorusline{Nkosi, Wena ke,}
+Nkosi, Wena ke,\\
+Wafa, Wandikhulula.\\
+Ndifundise ke,\\
+NdiKukhonze kakuhle.
+\end{chorus}
+\begin{stanza}
+Washiywa yedwa,\\
+Enduli yoKakayi,\\
+UMsindisi;\\
+Owandifela.\\
+Ulithemba lethu,\\
+Nengqiniseko yethu.\\
+Woyisa ukufa,\\
+Phila phakade.
+\end{stanza}
+\begin{stanza}
+SingaMhlungisi,\\
+OnguNyana kaThixo,\\
+Owaphalaza;\\
+Igazi laKhe;\\
+Singenamncedi\\
+Sisinga engcwabeni.\\
+Wasihlawulela,\\
+Ngobomi baKhe.
+\end{stanza}
+\begin{stanza}
+Yiza nomthwalo,\\
+KuMsindisi wakho.\\
+Xelela Yena,\\
+Wophulaphula.\\
+Othule umthwalo,\\
+Akuphe uloyiso.\\
+Intliziyo yakho\\
+Ivuye ngoko.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{22}{The voice of the Shepherd}
+\hymntitlewithdropcap{22}{The voice of the Shepherd...\#116}
+\begin{stanza}
+Lentswe la Modisa le a go bitsa.\\
+A re O go fa mahumô.\\
+O timêlêlang kwa 'thabêng tsa dibe?\\
+Tsomane le na le kagisô.
+\end{stanza}
+\begin{chorus}
+\setchorusline{Go na le kagisô}
+Go na le kagisô\\
+Le tapologo letsoman\eng\.
+\end{chorus}
+\begin{stanza}
+Go ja monate oo fetang wa dibe\\
+Go re senyêtsa botshelo;\\
+Gauta ya One e nnela ruri\\
+Tla jaanong, o tsênê botshelong.
+\end{stanza}
+\begin{stanza}
+Lentswe la Modisa le bitsa gapê.\\
+Kwa ntle go mopamô fêla;\\
+Letsomane le kgora lea sadisa.\\
+Tla o tsênê 'go lône jaana.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{33}{Njoni wachovu kwa Yesu}
+\hymntitlewithdropcap{33}{Njoni wachovu kwa Yesu...\#94}
+\begin{stanza}
+Njoni wachovu kwa Yesu,\\
+Njoni na kupumzika,\\
+Jitwikeni nira yake,\\
+Na kujifunza kwake.
+\end{stanza}
+\begin{chorus}
+\setchorusline{Je! umewahi kuona}
+Je! umewahi kuona\\
+Rafiki kama Yesu?\\
+Akusubiri kwa hamu\\
+Ili akun\ee\meshe.
+\end{chorus}
+\begin{stanza}
+Yesu Mpole angoja,\\
+Mwenye neema na kweli,\\
+Umefidiwa kwa damu,\\
+Mpe maisha yako.
+\end{stanza}
+\begin{stanza}
+Yesu Rafiki asema,\\
+Njoo kwangu upumzike,\\
+Ukiukosa wokovu,\\
+Itakuwaje kwako?
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{44}{Loved of God, approved}
+\hymntitlewithdropcap{44}{Loved of God, approved...\#236}
+\begin{stanza}
+Ho ba mokgethwa ya ratwang\\
+Ho monate hakaakang!\\
+Ke kgopolo e nkgothatsang\\
+Ke kgahlise Monga ka.
+\end{stanza}
+\begin{chorus}
+\setchorusline{O! Eka ke amohelwe!}
+O! Eka ke amohelwe!\\
+Ke be ke Mo kgahlise!\\
+Ke yona takatso ya ka\\
+Ho isa ho sa y\eng\ kae.
+\end{chorus}
+\begin{stanza}
+Ho monate ho nahana\\
+Kgetlo leo ke qadileng\\
+Ho tlelwa ke kgotso ya Hae;\\
+Hoo ho ntshedisa pelo.
+\end{stanza}
+\begin{stanza}
+Ho Mo sebeletsa lapeng\\
+Ho fetola ntlwana-nngwe\\
+E be ntlo ya Morena ka\\
+Hoba ke moo A dulang.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{55}{O wand'rers, come to Jesus}
+\hymntitlewithdropcap{55}{O wand'rers, come to Jesus...\#119}
+\begin{stanza}
+Uyai kunaJesu\\
+Mose varashiki.\\
+Mukasazvarwa kutsva\\
+Hamungaponeswi.\\
+Mofanira kusukwa\\
+Mukati memoyo\\
+Nokunatswa hanawo\\
+Pagwapa rezvivi.
+\end{stanza}
+\begin{stanza}
+Uyai kunaJesu;\\
+Maari zororai;\\
+Vimbai noMunyoro –\\
+Ane tsitsi huru.\\
+Munoda nzwi raJesu\\
+Rinopa rugare\\
+Nokudzikamisawo\\
+Dutu romumoyo.
+\end{stanza}
+\begin{stanza}
+Munoda simba raShe,\\
+Rigokuchengetai\\
+Pakati pemiedzo,\\
+Rigokukundisai.\\
+Munoda rudo rwaShe,\\
+Naye ave hama,\\
+Yokukuropafadzai\\
+Nokutungamira.
+\end{stanza}
+\begin{stanza}
+Chiuyai kunaShe,\\
+Musingambomutyi.\\
+Akamirira imi;\\
+Haangakudzingii;\\
+Mukatendeukira\\
+KunaShe muchokwadi,\\
+Muchaponeswa zvino\\
+Nokukanganwirwa.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{66}{Geen woord is onvervuld}
+\hymntitlewithdropcap{66}{Geen woord is onvervuld...\#272}
+\begin{stanza}
+Geen woord is onvervuld wat God beloof het\\
+Om ons te skenk tesame met sy Seun.\\
+Sy woord is meer standhoudend as die heem'le;\\
+Hy gee ons krag, Hy sal die wedloop seën.
+\end{stanza}
+\begin{stanza}
+Elk' woord is waar, want in ons tyd van smarte\\
+Kan ons op sy vertroosting steeds vertrou.\\
+Hy gaan met ons al is ons weg hoe eensaam,\\
+Om so te toon sy mag om ons te hou.
+\end{stanza}
+\begin{stanza}
+Elk' woord is waar wat God ookal gespreek het;\\
+Van die begin af bly sy woord steeds waar.\\
+Ons gee gehoor en volg in Jesus' voetspoor,\\
+Daar's niks te vrees want Hy sal ons bewaar.
+\end{stanza}
+\begin{stanza}
+Hy sal nie faal, wanneer ons aan Hom lewer\\
+Ons aandgebed, die offer van sy kind.\\
+Mag dit ons hoogste eer wees aan ons Meester,\\
+Mag Hy 'n welbehae daarin vind.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{14}{Na Wie, Heer, Sal Ons Gaan?}
+\hymntitlewithdropcap{14}{Na Wie, Heer, Sal Ons Gaan?...\#69}
+\begin{stanza}
+Na wie as slegs na U, o Heer\\
+Kan ons met harteleed ons keer?\\
+Te midde van aards' sorg en stryd\\
+Leef u woord voort deur ewigheid.
+\end{stanza}
+\begin{stanza}
+Na wie toe kan ons gaan, o Heer,\\
+Ons sondig' harte te bekeer?\\
+U het ons sonde veel versoen.\\
+Net u alleen, Heer, kon dit doen.
+\end{stanza}
+\begin{stanza}
+Na wie toe kan ons gaan, o Heer\\
+As bitter wonde word al meer?\\
+U hand deurboor bring heling mee;\\
+Die Man van Smarte werk so teer.
+\end{stanza}
+\begin{stanza}
+Ons kom na U, die Christus, Heer,\\
+U wat ons siel so na begeer.\\
+Met liefde teer wen U ons hart,\\
+Raak U ons aan, verdwyn ons smart.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{1}{Tell me the story}
+\hymntitlewithdropcap{1}{Tell me the story}
+\begin{stanza}
+Nkhani ya Yesu uzeni,\\
+Lemba mu mtima 'ngamo\\
+Nkhani yozama koposa\\
+Uzeni yozunitsa\\
+Ndi za gulu la angelo\\
+Natamanda Mulungu\\
+``Ulemerero kwa Iye,\\
+Mtendere pansi pano.''
+\end{stanza}
+\begin{chorus}
+\setchorusline{Nkhani ya Yesu uzeni,}
+Nkhani ya Yesu uzeni,\\
+Lemba mu mtima 'ngamo\\
+Nkhani yozama koposa\\
+Uzeni yozunitsa.
+\end{chorus}
+\begin{stanza}
+Uza za kuchipululu\\
+Iye yekha kusala\\
+Anayesedwa kwambiri\\
+Koma anagonjetsa.\\
+Uzeni za ntchito zake\\
+Ndi chisoni anamva.\\
+Ananyozedwa kowawa\\
+Mphawi opanda nyumba.
+\end{stanza}
+\begin{stanza}
+Uza za mtanda wa Yesu\\
+Pomwe anakhomedwa\\
+Anamyika Iye m'manda\\
+Koma anadzukanso.\\
+M'nkhani chikondi chofewa\\
+Ndiona mbee koposa\\
+Ndikuuzani, ndimtsata,\\
+Iye anandifera.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{15}{Jesus I my cross have taken}
+\hymntitlewithdropcap{15}{Jesus I my cross have taken...\#25}
+\begin{stanza}
+Yesu nimbulo lupanda,\\
+Nshile fyonse ku k'konka.\\
+Nelyo nakanwa, napatwa,\\
+Mwakulambela fyonse pe.
+\end{stanza}
+\begin{chorus}
+\setchorusline{Ndemukonka Mwe Katula,}
+Ndemukonka Mwe Katula,\\
+Wansumine m'lopa wenu.\\
+Nelyo calo camukana,\\
+Mu luse lwenu ndekonka.
+\end{chorus}
+\begin{stanza}
+Fyonse 'fyo natemwa, fifwe,\\
+Fyonse mfwayile kale.\\
+Pantu Yesu Mpomfu yandi,\\
+Na mu mulu, e bupyani.
+\end{stanza}
+\begin{stanza}
+Aba calo, nabansule,\\
+Basulile Katula.\\
+Mimonekele ya bantu,\\
+Yambepa, te imwe, Lesa.
+\end{stanza}
+\begin{stanza}
+Bantu balencule 'cibi,\\
+Mu mweo napamfiwa,\\
+Ndetwa ku cifuba cenu,\\
+Uko nasango mutende.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{100}{Incline your ear}
+\hymntitlewithdropcap{100}{Incline your ear...\#155}
+\begin{stanza}
+Bek' indlebe, uze,\\
+Lalela uMhlengi,\\
+Ngena emnyango wethemba\\
+Kukhona ithuba.
+\end{stanza}
+\begin{chorus}
+\setchorusline{Muzwe Ebiza,}
+Muzwe Ebiza,\\
+F\un'\ Akushiye,\\
+Masinyane iNkosi\\
+Yovala \um\nyango.
+\end{chorus}
+\begin{stanza}
+UJesu ulinda\\
+Emanzin' empilo,\\
+UMenze umngane wakho,\\
+Manje naphakade.
+\end{stanza}
+\begin{stanza}
+Lwanele uthando\\
+Nokuthula kwaKhe;\\
+Impilo yaKhe engcwele\\
+Izohlala kuwe.
+\end{stanza}
+\begin{stanza}
+Wakufela, wena,\\
+Akuhlawulele,\\
+Ubalekele ulaka\\
+LukaNkulunkulu.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{111}{Lay down your burden}
+\hymntitlewithdropcap{111}{Lay down your burden}
+\begin{stanza}
+Lay down your heavy burden,\\
+O weary, sinsick soul;\\
+Come to the Great Physician,\\
+And He will make you whole.\\
+The Master's voice is calling;\\
+He shed His precious blood\\
+That you might be forgiven,\\
+Bringing you nigh to God.
+\end{stanza}
+\begin{chorus}
+\setchorusline{Lay down your heavy burden,}
+Lay down your heavy burden,\\
+O weary, sinsick soul;\\
+Come to the Great Physician,\\
+And He will make you whole.
+\end{chorus}
+\begin{stanza}
+Come to your soul's Redeemer;\\
+His holy life He gave\\
+That you might share His glory\\
+Beyond the cold, dark grave.\\
+Heed not the wily tempter,\\
+Who bids you fear and doubt;\\
+Come now and trust in Jesus -\\
+He will not cast you out.
+\end{stanza}
+\begin{stanza}
+Peace past all understanding\\
+Will fill your heart and life;\\
+His joy and consolation\\
+Will banish sin and strife.\\
+His voice so sweet and tender,\\
+So full of love and grace,\\
+Entreats you. "Come, and welcome\\
+And find a hiding place."
+\end{stanza}
+\begin{stanza}
+The night of death is coming;\\
+Soon you must stand alone,\\
+Your sins still unforgiven,\\
+Before the great white throne.\\
+Do not reject the Saviour\\
+Until the die is cast,\\
+Your life's short day is ended,\\
+And you are lost at last.
+\end{stanza}
+\end{hymn}
+
+
+\end{multicols}
+\end{document}
