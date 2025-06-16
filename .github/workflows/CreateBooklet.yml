@@ -18,6 +18,12 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
+      - name: Download Compiled PDFs
+        uses: actions/download-artifact@v4
+        with:
+          name: compiled-pamphlets
+          path: output/
+
       - name: Install PDF Processing Tools
         run: |
           sudo apt update
@@ -25,12 +31,15 @@ jobs:
 
       - name: Process PDF Files
         run: |
-          mkdir -p output
           for file in output/*\ -\ View.pdf; do
             if [[ -f "$file" ]]; then
+              echo "Processing booklet for: $file"
               base_name="${file% - View.pdf}"
               pdfbook2 "$file"
               mv "${file%.*}-book.pdf" "${base_name} - Print.pdf"
+              echo "Created ${base_name} - Print.pdf"
+            else
+              echo "Warning: File not found for booklet processing: $file"
             fi
           done
 
@@ -46,3 +55,26 @@ jobs:
         with:
           name: compiled-and-booklet-pdfs
           path: output/*.pdf
+
+      # --- NEW STEP: Delete the inprogress file ---
+      - name: Delete inprogress file
+        run: |
+          if [ -f "input/inprogress.inprogress" ]; then
+            echo "Deleting input/inprogress.inprogress..."
+            rm "input/inprogress.inprogress"
+            echo "input/inprogress.inprogress deleted."
+          else
+            echo "input/inprogress.inprogress not found, skipping deletion."
+          fi
+        # This action uses git-auto-commit-action to commit the deletion,
+        # otherwise the file will be deleted on the runner but not in the repo.
+        # Ensure you want to commit this deletion back to the repository.
+      - name: Commit inprogress file deletion
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Cleaned up inprogress file"
+          # Only commit if changes exist (i.e., if the file was deleted)
+          commit_options: '--no-verify --allow-empty'
+          file_pattern: 'input/inprogress.inprogress'
+          # If you don't want to push immediately, remove push_options or set it to ''
+          push_options: '--force'
