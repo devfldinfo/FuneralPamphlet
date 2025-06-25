@@ -13,19 +13,22 @@
 \RequirePackage{tocloft}
 
 % Page setup
-\geometry{margin=0.3in}
+\geometry{margin=0.2in}
 \pagestyle{empty} % Disable page numbers
 
 % Font setup
 \newfontfamily\timesnewroman{Lato}
-\newcommand{\mainfont}{\timesnewroman\fontsize{30pt}{36pt}\selectfont} % Increased from 20pt/30pt
+\newcommand{\mainfont}{\timesnewroman\fontsize{14pt}{16pt}\selectfont} % Increased from 20pt/30pt
 \newcommand{\boldfont}[1]{{\timesnewroman\fontseries{b}\selectfont #1}}
+
+
 
 % Hymn environment
 \newenvironment{hymn}[2]{%
   \needspace{10\baselineskip}%
   \setchorusline{}
   \markboth{#2}{#2}%
+  \mainfont
 }{%
   \vspace{1em}%
   \setcounter{versenumber}{0}
