@@ -1,0 +1,212 @@
+
+\documentclass[15pt]{article}
+\usepackage{FP}
+\usepackage{graphicx}
+\usepackage{multicol}
+\begin{document}
+
+\begin{titlepage}
+  \centering
+  \vspace*{0.1\textheight}
+  {\fontsize{60}{72}\selectfont \bfseries Arthur Kinloch \par}
+  \vspace{0.1\textheight}
+  \includegraphics[height=0.3\textheight,keepaspectratio]{input/1000069448.jpg}
+  \par\vspace{0.1\textheight}
+  {\huge 01/01/1970-01/02-2025 \par}
+\end{titlepage}
+
+\clearpage
+\begin{multicols}{2}
+\setlength{\columnseprule}{0.3pt}
+\begin{hymn}{210}{Bwana usinyamaze}
+\hymntitlewithdropcap{210}{Bwana usinyamaze...\#227}
+\begin{stanza}
+Ee! Bwana usinyamaze,\\
+Bali kwa rehema nena,\\
+Nchi ingojavyo mvua,\\
+Ndivyo nikusubirivyo.
+\end{stanza}
+\begin{chorus}
+\setchorusline{Nakutegemea Bwana,}
+Nakutegemea Bwana,\\
+Naona kwako taraja,\\
+Kwani umenifariji,\\
+Nyakati za taabu nyingi.
+\end{chorus}
+\begin{stanza}
+Bwana ukinena kuonya\\
+Nitaona heri kwangu,\\
+Maana aniadhibuye\\
+Ndiye anayenipenda.
+\end{stanza}
+\begin{stanza}
+Bwana unioshe sasa\\
+Kwa neno lako la tunu,\\
+Ee! uniponye nafsini,\\
+Unirudishie nguvu.
+\end{stanza}
+\begin{stanza}
+Bwana nifanye mateka,\\
+Ni radhi kuwa mfungwa,\\
+Nitende mapenzi yako,\\
+Nitawaliwe na wewe.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{23}{Bwana Yesu alisema}
+\hymntitlewithdropcap{23}{Bwana Yesu alisema...\#96}
+\begin{stanza}
+Bwana Yesu alisema,\\
+Kajitwike msalaba,\\
+Na kunifuata ili\\
+Uwe mwanafunzi wangu.
+\end{stanza}
+\begin{stanza}
+Kajitwike msalaba,\\
+Usiogope uzito,\\
+Atakupa nguvu zake,\\
+Na atakutia moyo.
+\end{stanza}
+\begin{stanza}
+Kajitwike msalaba,\\
+Dharau aibu yake,\\
+Kwani kwa ajili yako,\\
+Aliuchukua wake.
+\end{stanza}
+\begin{stanza}
+Kajitwike msalaba,\\
+Utakuwasilisha juu,\\
+Na kwa nguvu zake Yesu,\\
+Utashinda mambo yote.
+\end{stanza}
+\begin{stanza}
+Kajitwike msalaba,\\
+Umfuate Mwokozi,\\
+Ukiuchukua hapa,\\
+Mbinguni utafurahi.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{102}{Chemchemi zangu}
+\hymntitlewithdropcap{102}{Chemchemi zangu...\#246}
+\begin{stanza}
+Chemchemi zangu ni mwake\\
+Yesu anipatia\\
+Mahitaji yangu yote,\\
+Na kutuliza moyo;\\
+Nakaa kivulini mwake,\\
+Katika furaha kuu,\\
+Aniburudisha sana\\
+Hata siku za taabu.
+\end{stanza}
+\begin{stanza}
+Chemchemi zangu ni mwake,\\
+Ninavutwa na pendo,\\
+Ningalala aniamsha\\
+Moyo kwa sauti yake;\\
+Njoo kwangu Mpendwa wangu,\\
+Giza litoke kwangu,\\
+U chemchemi iliyo hai,\\
+Furaha na taraja.
+\end{stanza}
+\begin{stanza}
+Chemchemi zangu ni mwake\\
+Yesu, Mpendwa wangu,\\
+Aliniona kwa pendo\\
+Akanishinda moyo;\\
+Yu Mkombozi rafiki,\\
+Hata Mwokozi wangu,\\
+Nimepata radhi kwake\\
+Na pendo bila mwisho.
+\end{stanza}
+\begin{stanza}
+Chemchemi zangu ni mwake\\
+Yesu mwenye uhai,\\
+Kukaa katika upendo\\
+Wake ni raha kubwa;\\
+Ataniokoa niwe\\
+Huru kwa dhambi zote,\\
+Hatimaye nitaona\\
+Uso wake Mwokozi.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{120}{Ja my keuse is vir ewig}
+\hymntitlewithdropcap{120}{Ja my keuse is vir ewig...\#132}
+\begin{stanza}
+Ja my keuse is vir ewig,\\
+Ek sal wandel met my Heer.\\
+Nimmer sal Hy my begewe;\\
+Dit is wat sy Woord my leer.\\
+Eensaam pad die kies ek hier nou\\
+Sou dit ru en donker skyn\\
+En ofskoon verag, verlate.\\
+Gaan ek deur aan Jesus' sy.
+\end{stanza}
+\begin{chorus}
+\setchorusline{Jesus self bestier elk' voetstap;}
+Jesus self bestier elk' voetstap;\\
+Hy besit my hart alleen.\\
+En ek waag alleen geen skrede\\
+Deur die moeilik' lewe heen.
+\end{chorus}
+\begin{stanza}
+Wag die tuin van angs en droefheid,\\
+Ook beskuldigings en spot\\
+Gaan my pad deur nagt'lik duister\\
+En is donkerte my lot.\\
+Duisternis laat my nie t'rug deins,\\
+Van u aanskyn vlug die nag\\
+En as U my Gids sal wees, Heer,\\
+Gaan ek deur slegs in u krag.
+\end{stanza}
+\begin{stanza}
+As die laaste stryd gestry is\\
+En gevegte, hewig klaar;\\
+As die laaste vyand sneuwel,\\
+Dan is die oorwinning daar,\\
+Dan gaan pêrelpoorte oop ook\\
+En 'n ingang vol en vry\\
+Word vergun dan aan oorwinnaars,\\
+Gaan ek deur aan Jesus' sy.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{1}{Spreek Weer tot My}
+\hymntitlewithdropcap{1}{Spreek Weer tot My...\#3}
+\begin{stanza}
+Spreek weer tot my van Gods liefde so groot;\\
+Van ons versoening deur Jesus se dood.\\
+Ja, Hy verlaat selfs sy Vader se huis,\\
+Verduur die lyding en spot aan die kruis.
+\end{stanza}
+\begin{chorus}
+\setchorusline{Spreek van sy lewe, ja ook van sy dood}
+Spreek van sy lewe, ja ook van sy dood\\
+En van die kruishout waar Jesus moes ly.\\
+Hy was verwond vir ons sonde so groot;\\
+Liefde oorvloedig, vertel dit vir my!
+\end{chorus}
+\begin{stanza}
+Spreek weer tot my hoe Hy ween oor hul skuld.\\
+Open die poort dat hul lewe mag vind,\\
+Maar hul verag Hom, verhard hulle hart;\\
+Werp uit hul Heiland en het Hom verlaat.
+\end{stanza}
+\begin{stanza}
+Spreek van sy smart toe Hy bid in die tuin.\\
+Laste van sonde veroorsaak sy pyn.\\
+Geeneen was waardig ons skuld te versoen;\\
+Hy neem die beker, slegs Hy kon dit doen.
+\end{stanza}
+\begin{stanza}
+Spreek van die bittere kreet uit sy hart,\\
+Hoe Hy verlaat was alleen in sy smart:\\
+Eensaam, gepynig, deur ywer gedring;\\
+Liefde se werk van verlossing volbring.
+\end{stanza}
+\end{hymn}
+
+
+\end{multicols}
+\end{document}
