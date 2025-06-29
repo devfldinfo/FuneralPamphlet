@@ -1,0 +1,50 @@
+
+\documentclass[15pt]{article}
+\usepackage{FP}
+\usepackage{graphicx}
+\usepackage{multicol}
+\begin{document}
+
+\begin{titlepage}
+  \centering
+  \vspace*{0.1\textheight}
+  {\fontsize{60}{72}\selectfont \bfseries shsh sh \par}
+  \vspace{0.1\textheight}
+  \includegraphics[height=0.3\textheight,keepaspectratio]{input/image.jpg}
+  \par\vspace{0.1\textheight}
+  {\huge ejr \par}
+\end{titlepage}
+
+\clearpage
+\begin{multicols}{2}
+\setlength{\columnseprule}{0.3pt}
+\begin{hymn}{200}{Tungependa kumwona}{392}
+\begin{stanza}
+Tungependa kumwona Yesu kwani,\\
+Maisha yetu yapita hima,\\
+Tumwone ili imani izidi,\\
+Na tuwe thabiti hadi mwisho.
+\end{stanza}
+\begin{stanza}
+Tumwone Yesu, msingi wa mwamba,\\
+Ambao twasimama juu yake,\\
+Usumbufu wa maisha na kifo\\
+Hautatutoa tukimwona.
+\end{stanza}
+\begin{stanza}
+Tumwone Yesu, kwa kuwa vingine\\
+Tulivyopenda vinafifia.\\
+Baraka za dunia zinapita\\
+Haidhuru kwetu, twakujia.
+\end{stanza}
+\begin{stanza}
+Tumwone Yesu ili tuzidishwe\\
+Furaha, nguvu na utayari.\\
+Tumwone akituombea sasa,\\
+Ili tusikihofie kifo.
+\end{stanza}
+\end{hymn}
+
+
+\end{multicols}
+\end{document}
