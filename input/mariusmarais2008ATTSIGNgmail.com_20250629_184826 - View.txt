@@ -1,0 +1,197 @@
+
+\documentclass[15pt]{article}
+\usepackage{FP}
+\usepackage{graphicx}
+\usepackage{multicol}
+\begin{document}
+
+\begin{titlepage}
+  \centering
+  \vspace*{0.1\textheight}
+  {\fontsize{60}{72}\selectfont \bfseries shs sjs \par}
+  \vspace{0.1\textheight}
+  \includegraphics[height=0.3\textheight,keepaspectratio]{input/image.jpg}
+  \par\vspace{0.1\textheight}
+  {\huge ee \par}
+\end{titlepage}
+
+\clearpage
+\begin{multicols}{2}
+\setlength{\columnseprule}{0.3pt}
+\begin{hymn}{20}{Napenda kuona kwamba}{\#39}
+\begin{stanza}
+Napenda kuona kwamba,\\
+Njia yake Mungu kwangu,\\
+Ni ile tu Bwana Yesu,\\
+Aliyokwisha pitia.
+\end{stanza}
+\begin{chorus}
+\setchorusline{Kuwapo kwa Mungu kwangu,}
+Kuwapo kwa Mungu kwangu,\\
+Ni kimbilio milele,\\
+Ndiye tumaini langu,\\
+Ahadi zake zadumu.
+\end{chorus}
+\begin{stanza}
+Pendo lake ndani yangu,\\
+Litanifundisha mimi,\\
+Jinsi ya kumhudumu,\\
+Na kushika njia yake.
+\end{stanza}
+\begin{stanza}
+Mavazi yake ya tunu,\\
+Twavikwa tukikaa kwake,\\
+Walimwengu wadharau,\\
+Mede iliyo mbinguni.
+\end{stanza}
+\begin{stanza}
+Karamu iko nyikani,\\
+Na mkate wa mbinguni,\\
+Waulao wataishi,\\
+Neno litawahuisha.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{132}{Bwana tumekusanyika}{\#391}
+\begin{stanza}
+Bwana tumekusanyika\\
+Kwa hali ya unyonge,\\
+Tuonavyo mifano hii,\\
+Twakumbuka Kalvari.
+\end{stanza}
+\begin{chorus}
+\setchorusline{Kalvari, Kalvari,}
+Kalvari, Kalvari,\\
+Twakumbuka Kalvari,\\
+Mkate na divai hivi\\
+Vyatukumbusha Yesu.
+\end{chorus}
+\begin{stanza}
+Usiku ule taabani,\\
+Alijikaza kuomba,\\
+Alihuzunika sana,\\
+Jasho likawa damu.
+\end{stanza}
+\begin{stanza}
+Mwone yu nje ya mji,\\
+Alichukua dhambi,\\
+Wakamwua kikatili,\\
+Tupate furaha kuu.
+\end{stanza}
+\begin{stanza}
+Yeye atutakasaye\\
+Dhambi zetu kwa damu,\\
+Twashukuru na kusihi\\
+Neema ya kumpenda.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{1}{Nisimulie ya Yesu}{\#1}
+\begin{stanza}
+Nisimulie ya Yesu,\\
+Iandike moyoni,\\
+Hadithi iliyo tunu,\\
+Njema kuliko zote;\\
+Nieleze juu ya wimbo,\\
+Wa wale malaika,\\
+``Mtukuze Mungu juu na\\
+Amani duniani.''
+\end{stanza}
+\begin{chorus}
+\setchorusline{Nisimulie ya Yesu,}
+Nisimulie ya Yesu,\\
+Iandike moyoni\\
+Hadithi iliyo tunu,\\
+Njema kuliko zote.
+\end{chorus}
+\begin{stanza}
+Eleza ya siku zile,\\
+Alipokaa nyikani,\\
+Akajaribiwa huko,\\
+Lakini akashinda;\\
+Eleza taabu za kwake,\\
+Nayo masikitiko,\\
+Yeye alidhihakiwa,\\
+Maskini, hana kwake.
+\end{stanza}
+\begin{stanza}
+Eleza ya msalaba,\\
+Alipoteswa sana,\\
+Jinsi alivyofariki,\\
+Na alivyofufuka,\\
+Katika hadithi hii,\\
+Naona pendo lake,\\
+Nami nitamfuata\\
+Aliyenitesewa.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{2}{Yesu ni ujumbe}{\#10}
+\begin{stanza}
+Yesu ni ujumbe wetu,\\
+Tutamtaja Yesu,\\
+Tutamtukuza Yesu,\\
+Tutamwona Mwokozi.
+\end{stanza}
+\begin{chorus}
+\setchorusline{Yesu tu, hata milele,}
+Yesu tu, hata milele,\\
+Tumwimbaye ni Yesu,\\
+Mwokozi, Bwana, Mfalme,\\
+Mwenye heri ajaye.
+\end{chorus}
+\begin{stanza}
+Yesu ni Mwokozi wetu,\\
+Atusafisha dhambi,\\
+Atuhesabia haki,\\
+Anatuimarisha.
+\end{stanza}
+\begin{stanza}
+Yesu ndiye nguvu yetu,\\
+Akaa mioyoni mwetu,\\
+Tusihofu, tusisite,\\
+Atoa neema, nguvu.
+\end{stanza}
+\begin{stanza}
+Yesu ndiye Bwana wetu,\\
+Ni vema kumtii,\\
+Ee! tumtumikieni,\\
+Tuwe na wateule.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{10}{Yesu alikufa}{\#null}
+\begin{stanza}
+Yesu alikufa kwa wenye dhambi,\\
+Acha dhambi zako umwone Mungu;\\
+Patana na Yesu, utakuwa hai,\\
+Kristo ndani ni taraja la utukufu.
+\end{stanza}
+\begin{chorus}
+\setchorusline{Umkiri na mwamini, Yesu, Mwokozi,}
+Umkiri na mwamini, Yesu, Mwokozi,\\
+Roho asitoke kwako daima.
+\end{chorus}
+\begin{stanza}
+Akuita wewe, mwenye mizigo,\\
+Atakupokea akupumzishe;\\
+Muda wa rehema, ziache dhambi,\\
+Mungu atakusamehe akupe raha.
+\end{stanza}
+\begin{stanza}
+Ukisamehewa kwa kifo chake,\\
+Utaokolewa kwa uhai wake;\\
+Akaavyo mwako usiogope,\\
+Utashinda dunia, nafsi na Shetani.
+\end{stanza}
+\begin{stanza}
+Tangaza injili iliyo kweli,\\
+Umepatanishwa kwa kifo chake;\\
+Ukimfuata katika nuru,\\
+Damu ya Yesu itakutakasa kweli.
+\end{stanza}
+\end{hymn}
+
+
+\end{multicols}
+\end{document}
