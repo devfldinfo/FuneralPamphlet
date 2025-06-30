@@ -1,6 +1,8 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{FP}[2025/05/04 Hymnbook layout with left-aligned number and title]
 
+
+\RequirePackage{tocloft}
 \RequirePackage{titlesec}
 \RequirePackage{parskip}
 \RequirePackage{xcolor}
@@ -10,7 +12,6 @@
 \RequirePackage{multicol}
 \RequirePackage{needspace}
 \RequirePackage{fontspec}
-\RequirePackage{tocloft}
 
 % Page setup
 \geometry{margin=0.2in}
@@ -21,25 +22,17 @@
 \newcommand{\mainfont}{\timesnewroman\fontsize{14pt}{16pt}\selectfont} % Increased from 20pt/30pt
 \newcommand{\boldfont}[1]{{\timesnewroman\fontseries{b}\selectfont #1}}
 
-
-
-% Hymn environment
-\newenvironment{hymn}[2]{%
-  \needspace{10\baselineskip}%
-  \setchorusline{}
-  \markboth{#2}{#2}%
-  \mainfont
-}{%
-  \vspace{1em}%
-  \setcounter{versenumber}{0}
-}
-
 % Title block: hymn number and title in larger Times New Roman
-\newcommand{\hymntitlewithdropcap}[2]{%
+% Added #3 for engHymnNo
+\newcommand{\hymntitlewithdropcap}[3]{%
   \begin{minipage}[t]{\columnwidth}%
     \raggedright
     {\timesnewroman\fontseries{b}\fontsize{50pt}{72pt}\selectfont #1}\hspace{0.5em} % Increased from 50pt/60pt
-    {\timesnewroman\fontshape{it}\fontsize{15pt}{16pt}\selectfont #2}\par\vspace{0.5em} % Added explicit 36pt size
+    {\timesnewroman\fontshape{it}\fontsize{15pt}{16pt}\selectfont #2}%
+    \ifstrempty{#3}{}{%  <--- Check if #3 is not empty
+        \unskip...#3%  <--- Removed \boldfont and adjusted spacing
+    }%
+    \par\vspace{0.5em}%
   \end{minipage}%
 }
 
@@ -53,9 +46,24 @@
 % Flag to track stanzas
 \newcounter{versenumber}
 
+% Hymn environment
+% Added #3 for engHymnNo
+\newenvironment{hymn}[3]{%
+  \needspace{10\baselineskip}%
+  \setchorusline{}
+  \markboth{#2}{#2}%
+  \mainfont
+  \hymntitlewithdropcap{#1}{#2}{#3}%  <--- Pass the 3rd argument
+  \setcounter{versenumber}{0}%
+}{%
+  \vspace{1em}%
+}
+
+% Stanza environment
 \newenvironment{stanza}{%
   \stepcounter{versenumber}%
   \needspace{6\baselineskip}%
+  \vspace{0.5em}%  <--- Added vertical space before the stanza
   \begin{minipage}[t]{\columnwidth}%
   \setlength{\parindent}{0pt}%
   \ignorespaces
@@ -66,10 +74,11 @@
     \ifx\chorusline\empty
       % If chorusline is empty, do nothing
     \else
-      \par\hspace{2em}\boldfont{\textquotedblleft \chorusline...\textquotedblright}
+      \par\hspace{2em}\boldfont{\textquotedblleft\chorusline...\textquotedblright}
     \fi
   \fi
   \end{minipage}\noindent
+  \vspace{0.5em}%  <--- Added vertical space after the stanza
 }
 
 % Chorus environment
@@ -99,3 +108,4 @@
     #2%
   }\\
 }
+
