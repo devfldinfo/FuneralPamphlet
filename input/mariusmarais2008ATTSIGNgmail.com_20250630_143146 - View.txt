@@ -1,0 +1,116 @@
+
+\documentclass[15pt]{article}
+\usepackage{FP}
+\usepackage{graphicx}
+\usepackage{multicol}
+\begin{document}
+
+\begin{titlepage}
+  \centering
+  \vspace*{0.1\textheight}
+  {\fontsize{60}{72}\selectfont \bfseries ejej ehe \par}
+  \vspace{0.1\textheight}
+  \includegraphics[height=0.3\textheight,keepaspectratio]{input/1000069299.jpg}
+  \par\vspace{0.1\textheight}
+  {\huge ejr \par}
+\end{titlepage}
+
+\clearpage
+\begin{multicols}{2}
+\setlength{\columnseprule}{0.3pt}
+\begin{hymn}{30}{We have found him}{}
+\begin{stanza}
+Ye who trace with weary hearts and sad\\
+Those blest scenes of Galilee,\\
+O rejoice and be forever glad!\\
+"We have found Him - come and see!"
+\end{stanza}
+\begin{chorus}
+\setchorusline{We have found Him! - Joy of the Ages!}
+"We have found Him! - Joy of the Ages!"\\
+And our song with heaven's gladness rings:\\
+"We have found the Christ of whom the prophets spake;\\
+We have found Him, King of kings."
+\end{chorus}
+\begin{stanza}
+Ye who hunger for the living word,\\
+Ye who thirst for living springs,\\
+Come, each waiting heart with joy is stirred\\
+By the song the herald sings.
+\end{stanza}
+\begin{stanza}
+This same Christ who taught beside the sea\\
+Walks upon the earth today,\\
+And He comes in lowliness to thee,\\
+Templed still in mortal clay.
+\end{stanza}
+\begin{stanza}
+"We have found Him!" Bear the tidings far,\\
+Wheresoever men are found,\\
+Until all who seek the Guiding Star\\
+Shall in light and peace abound.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{40}{God's time is now}{}
+\begin{stanza}
+God's time is now: O do not wait\\
+Until another day is born;\\
+His Spirit, grieved, may take His flight\\
+And leave you, never to return.
+\end{stanza}
+\begin{chorus}
+\setchorusline{Today if you will hear His voice,}
+Today if you will hear His voice,\\
+Respond and harden not your heart;\\
+Wait not a more convenient day:\\
+His Holy Spirit may depart.
+\end{chorus}
+\begin{stanza}
+God's time is now: O linger not;\\
+The shades of night are falling fast,\\
+And still you undecided stand;\\
+What if today should be your last?
+\end{stanza}
+\begin{stanza}
+God's time is now: do not rebel\\
+Nor wait a more convenient day;\\
+While angels bow their heads and weep,\\
+You cast the Saviour's love away.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{126}{Kindly entreating}{}
+\begin{stanza}
+Kindly entreating, "Come unto me,"\\
+Jesus the Saviour is speaking to thee,\\
+Earnestly saying, "Do not delay;\\
+Flee from destruction, escape while you may.\\
+Flee from destruction, escape while you may."
+\end{stanza}
+\begin{stanza}
+Kindly entreating, "Come unto me:\\
+Glory immortal your portion shall be."\\
+Shame and dishonour wait those who stray\\
+Far from the Saviour on ruin's dark way -\\
+Far from the Saviour on ruin's dark way.
+\end{stanza}
+\begin{stanza}
+Kindly entreating, hear Him once more;\\
+Soon you'll be stranded on sin's treacherous shore.\\
+Angels are waiting; do you not care\\
+That you are drifting to endless despair -\\
+That you are drifting to endless despair?
+\end{stanza}
+\begin{stanza}
+Kindly entreating, "Come unto me,"\\
+Aimlessly drifting on life's restless sea,\\
+No hope, no refuge, where will you end?\\
+Hasten to Jesus, your Saviour and Friend.\\
+Hasten to Jesus, your Saviour and Friend.
+\end{stanza}
+\end{hymn}
+
+
+\end{multicols}
+\end{document}
