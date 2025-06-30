@@ -1,0 +1,155 @@
+
+\documentclass[15pt]{article}
+\usepackage{FP}
+\usepackage{graphicx}
+\usepackage{multicol}
+\begin{document}
+
+\begin{titlepage}
+  \centering
+  \vspace*{0.1\textheight}
+  {\fontsize{60}{72}\selectfont \bfseries Piet Jan \par}
+  \vspace{0.1\textheight}
+  \includegraphics[height=0.3\textheight,keepaspectratio]{input/100\_2574.JPG}
+  \par\vspace{0.1\textheight}
+  {\huge 12/01/1970-01/01/2025 \par}
+\end{titlepage}
+
+\clearpage
+\begin{multicols}{2}
+\setlength{\columnseprule}{0.3pt}
+\begin{hymn}{200}{Lord, my heart's deep need}{}
+\begin{stanza}
+Lord, my heart's deep need Thou knowest -\\
+Contrite at Thy feet I pray,\\
+Watching, waiting in Thy presence,\\
+Listening, willing to obey.\\
+All my soul for Thee is yearning,\\
+Fainting for Thy courts, O Lord;\\
+Truest source of satisfaction,\\
+Feed me on the living word.
+\end{stanza}
+\begin{chorus}
+\setchorusline{All my soul for Thee is yearning,}
+All my soul for Thee is yearning,\\
+To be filled with Thee alone,\\
+Sanctified, approved, accepted,\\
+One whom Thou canst seal and own.
+\end{chorus}
+\begin{stanza}
+Lord my heart's deep need Thou knowest -\\
+Draw me, I will follow Thee,\\
+Free from sin's enthralling bondage,\\
+In Thy light and liberty.\\
+All my weakness, Lord, Thou seest;\\
+In temptation be my tower;\\
+Make me more and more like Jesus\\
+Daily by Thy Spirit's power.
+\end{stanza}
+\begin{stanza}
+Lord, my heart's deep need Thou knowest -\\
+Do not turn away my prayer;\\
+Thou hast walked the path before me;\\
+Thou canst sympathize and care.\\
+O remember me in mercy,\\
+And impart the needed grace\\
+To enable me to follow\\
+Till I see Thee face to face.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{121}{Low before Thy throne}{\#194}
+\begin{stanza}
+Sesisondele kuWe\\
+Es'hlalweni somusa,\\
+Yizwa is'celo sethu\\
+Ngegama loMsindisi.\\
+SiKuthobela, Baba,\\
+Samukeliswe umsa,\\
+Siphawule kabusha\\
+NgolukaMoy' oNgcwele.
+\end{stanza}
+\begin{stanza}
+Sizinikele kuWe\\
+Ngenhliziyo nomzimba,\\
+KuWe siphila njalo,\\
+Sijabule emseni;\\
+SesiKunxusa namhla\\
+Ngegazi loMsindisi,\\
+Sizwele, samukele,\\
+Silungele umbuso.
+\end{stanza}
+\begin{stanza}
+Usithwese igunya\\
+Siphath' igama laKho;\\
+Masingabi nacala,\\
+Sihlanzwe ebubini.\\
+Gcwalisa inhliziyo,\\
+Ngothando olumiyo.\\
+Philisa inhliziyo,\\
+Sembathe ukuthoba.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{20}{Daar is 'n Heiland}{\#156}
+\begin{stanza}
+Daar is 'n Heiland, sy liefde duur ewig.\\
+Hy wag in genade op u en op my,\\
+Hy wil u omhels en u kroon met sy vrede.\\
+Kom dan tot die Heiland, sy lief' is so vry.
+\end{stanza}
+\begin{chorus}
+\setchorusline{Ook u roep die Heiland;}
+Ook u roep die Heiland;\\
+Ook u roep die Heiland;\\
+Ook u roep die Heiland;\\
+Hy roep u reeds nou.
+\end{chorus}
+\begin{stanza}
+Smaak van sy goedheid terwyl Hy dit aanbied,\\
+Die vreugd' van sy koninkryk u onbekend.\\
+Die Herder self lei u, Hy help en beskerm u.\\
+Wil dan tog betyds nog u hart na Hom wend.
+\end{stanza}
+\begin{stanza}
+Hy gaan verby en miskien reeds vir altyd\\
+Waardeur die geleentheid nou nog so naby.\\
+Neem wat Hy u aanbied, nou is daar die tyd nog.\\
+O neem dan die stap tot die ingang so vry.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{5}{Mwokozi usiniache}{\#344}
+\begin{stanza}
+Mwokozi usiniache,\\
+Nishike mkono wangu,\\
+Kivuli cha mbawa zako,\\
+Ki juu yangu kuonyesha\\
+Mimi ni wako tu.
+\end{stanza}
+\begin{stanza}
+Napenda kuwepo kwako,\\
+Uniondolee shaka,\\
+Nisikie sauti yako,\\
+Ikiniamsha moyoni,\\
+Nifikie mede.
+\end{stanza}
+\begin{stanza}
+Ulindaye roho yangu,\\
+Uwe karibu kila saa,\\
+Vita inikabilipo,\\
+Na giza zito la dhambi,\\
+Sitafadhaika.
+\end{stanza}
+\begin{stanza}
+Yanifurahisha mno,\\
+Kuguswa nawe ee! Bwana,\\
+Hata kukuegemea\\
+Kifuani kwa upendo,\\
+Ee! mimi ni wako.
+\end{stanza}
+\end{hymn}
+
+
+\end{multicols}
+\end{document}
