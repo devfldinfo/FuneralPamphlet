@@ -1,0 +1,108 @@
+
+\documentclass{article}
+\usepackage{FP}
+\usepackage{graphicx}
+\usepackage{multicol}
+\begin{document}
+
+\begin{titlepage}
+  \centering
+  \vspace*{0.1\textheight}
+  {\fontsize{60}{72}\selectfont \bfseries Hluyfvh \par}
+  \vspace{0.1\textheight}
+  \includegraphics[height=0.3\textheight,keepaspectratio]{input/image.jpg}
+  \par\vspace{0.1\textheight}
+  {\huge Jhgvh \par}
+\end{titlepage}
+
+\clearpage
+\begin{multicols}{2}
+\setlength{\columnseprule}{0.3pt}
+\begin{hymn}{236}{Baba nipe moyo}{}
+\begin{stanza}
+Baba, nipe moyo laini,\\
+Wenye huruma na mnyofu.\\
+Na ufanane na wako tu,\\
+Kwa kila neno na tendo.\\
+Ondoa ugumu,\\
+Na uchungu pia.\\
+Moyo mpya wenye\\
+Ukarimu wako.\\
+Nirudishe kwenye\\
+Mapenzi yako tu.\\
+Nipe moyo laini\\
+Kama wako.
+\end{stanza}
+\begin{stanza}
+Ee Baba, nipe moyo safi,\\
+Ingawa sikustahili.\\
+Nijaze Roho wako, Baba,\\
+Nikupendeze daima.\\
+Niyasahau ma-\\
+kosa ya wengine.\\
+Nikiwasamehe,\\
+Kabisa moyoni\\
+Ingawa machozi,\\
+Ya huzuni yaje;\\
+Nipe moyo laini\\
+Kama wako.
+\end{stanza}
+\begin{stanza}
+Ee Nipe moyo bila hila\\
+Nijaze upendo safi.\\
+Nipe moyo kumsaidia\\
+Mwingine mwenye haja kuu.\\
+Japo mpendwa au\\
+Mwenye ukatili.\\
+Nione huzuni\\
+Ya jirani yangu.\\
+Nishiriki taabu\\
+Au maumivu;\\
+Mwenye moyo laini\\
+Niendako.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{237}{Nikatangatanga mbali}{}
+\begin{stanza}
+Nikatangatanga mbali\\
+Nikizimia nanjaa.\\
+Nikavitapanya vyote\\
+Baba akavyonipa.\\
+Nikakumbuka mkate\\
+Na wema wa Baba yangu.\\
+"Nitamjia Baba niwe\\
+Mtumwa siyo mwana".
+\end{stanza}
+\begin{chorus}
+\setchorusline{Lakini Akanibusu}
+Lakini Akanibusu\\
+Akanikubali tena\\
+Sistahili hata kidogo\\
+Nitamsifu milele.
+\end{chorus}
+\begin{stanza}
+Nikarudia nyumbani\\
+Ee, Kama nilivyo tu.\\
+Akaniona ningali\\
+Nilipokuwa mbali.\\
+Akaenda mbio kwangu.\\
+Akanifanya tena\\
+Kuwa mwana mpendewa.\\
+Ninampenda mno.
+\end{stanza}
+\begin{stanza}
+Nikakiri mbele zake\\
+Ee Dhambi zangu nyingi.\\
+Akajibu kwa kuita\\
+Watumishi wake tu.\\
+"Mvike vazi, viatu\\
+Na pete kidoleni,\\
+Huyu mwanangu aliye\\
+Kufa, sasa yuhai"
+\end{stanza}
+\end{hymn}
+
+
+\end{multicols}
+\end{document}
