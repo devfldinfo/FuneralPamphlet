@@ -3,10 +3,10 @@ name: Compile LaTeX Files
 on:
   push:
     paths:
-      - 'input/start.start'
+      - 'input/start.start' # This trigger path is still here, but the job's 'if' will control execution
   pull_request:
     paths:
-      - 'input/start.start'
+      - 'input/start.start' # Same here
   workflow_dispatch:
 
 permissions:
@@ -15,41 +15,33 @@ permissions:
 jobs:
   compile:
     runs-on: ubuntu-latest
-    # --- TEMPORARILY REMOVE THE 'if' CONDITION FOR DEBUGGING ---
-    # We remove this so the job always runs and we can see the debug output.
-    # After debugging, we will put it back.
-    # if: |
-    #   github.event_name == 'workflow_dispatch' ||
-    #   (github.event_name == 'push' &&
-    #     fromJSON(toJSON(github.event.commits.*.added)).flat().includes('input/start.start') &&
-    #     !fromJSON(toJSON(github.event.commits.*.removed)).flat().includes('input/start.start')
-    #   )
 
     steps:
-      - name: Debug - Print GitHub Event Payload
-        run: |
-          echo "GitHub Event Name: ${{ github.event_name }}"
-          echo "--- Raw GitHub Event (GITHUB_EVENT_PATH) ---"
-          cat "$GITHUB_EVENT_PATH" | jq . # jq is a JSON processor, helpful for readable output
-          echo "--- Content of github.event.commits.*.added ---"
-          echo "${{ toJSON(github.event.commits.*.added) }}" | jq .
-          echo "--- Content of github.event.commits.*.removed ---"
-          echo "${{ toJSON(github.event.commits.*.removed) }}" | jq .
-          echo "--- Finished debug print ---"
-        shell: bash # Ensure bash is used for jq and shell commands
-
       - name: Checkout Repository
         uses: actions/checkout@v4
 
+      - name: Check for inprogress.inprogress file
+        id: check_inprogress_file
+        run: |
+          if [ -f "output/inprogress.inprogress" ]; then
+            echo "inprogress_file_exists=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "inprogress_file_exists=false" >> "$GITHUB_OUTPUT"
+          fi
+        shell: bash
+
       - name: Install LaTeX and PDF Utilities
+        if: steps.check_inprogress_file.outputs.inprogress_file_exists == 'true' || github.event_name == 'workflow_dispatch'
         run: |
           sudo apt-get update
           sudo apt-get install -y texlive-latex-base texlive-latex-extra texlive-fonts-recommended texlive-xetex texlive-bibtex-extra biber texlive-extra-utils
 
       - name: Create Output Directory
+        if: steps.check_inprogress_file.outputs.inprogress_file_exists == 'true' || github.event_name == 'workflow_dispatch'
         run: mkdir -p output
 
       - name: Compile LaTeX Files
+        if: steps.check_inprogress_file.outputs.inprogress_file_exists == 'true' || github.event_name == 'workflow_dispatch'
         run: |
           for file in input/*.txt; do
             base_name=$(basename "$file" .txt)
@@ -62,9 +54,11 @@ jobs:
           done
 
       - name: Delete Temporary LaTeX Files
+        if: steps.check_inprogress_file.outputs.inprogress_file_exists == 'true' || github.event_name == 'workflow_dispatch'
         run: rm -f output/*.{aux,log,lof,lot,toc,bbl,blg,out,synctex.gz,fdb_latexmk,fls,bcf,run.xml}
 
       - name: Auto Commit PDFs
+        if: steps.check_inprogress_file.outputs.inprogress_file_exists == 'true' || github.event_name == 'workflow_dispatch'
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: "Compiled LaTeX files"
@@ -72,6 +66,7 @@ jobs:
           file_pattern: 'output/*.pdf'
 
       - name: Upload PDFs
+        if: steps.check_inprogress_file.outputs.inprogress_file_exists == 'true' || github.event_name == 'workflow_dispatch'
         uses: actions/upload-artifact@v4
         with:
           name: compiled-pamphlets
