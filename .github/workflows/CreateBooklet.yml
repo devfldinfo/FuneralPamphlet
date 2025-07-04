@@ -43,11 +43,11 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Download Compiled PDFs
-        uses: actions/download-artifact@v4
-        with:
-          name: compiled-pamphlets # This must match the name used in Compile LaTeX Files
-          path: output/ # Downloads artifacts into the output/ directory
+ #     - name: Download Compiled PDFs
+ #       uses: actions/download-artifact@v4
+ #       with:
+ #         name: compiled-pamphlets # This must match the name used in Compile LaTeX Files
+ #         path: output/ # Downloads artifacts into the output/ directory
 
       - name: Install PDF Processing Tools
         run: |
