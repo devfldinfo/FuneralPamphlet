@@ -23,7 +23,7 @@ jobs:
       - name: Check for inprogress.inprogress file
         id: check_inprogress_file
         run: |
-          if [ -f "output/inprogress.inprogress" ]; then
+          if [ -f "input/inprogress.inprogress" ]; then
             echo "inprogress_file_exists=true" >> "$GITHUB_OUTPUT"
           else
             echo "inprogress_file_exists=false" >> "$GITHUB_OUTPUT"
