@@ -1,0 +1,167 @@
+
+\documentclass{article}
+\usepackage{FP}
+\usepackage{graphicx}
+\usepackage{multicol}
+\begin{document}
+
+\begin{titlepage}
+  \centering
+  \vspace*{0.1\textheight}
+  {\fontsize{60}{72}\selectfont \bfseries 4 \par}
+  \vspace{0.1\textheight}
+  \includegraphics[height=0.3\textheight,keepaspectratio]{input/image.jpg}
+  \par\vspace{0.1\textheight}
+  {\huge 4 \par}
+\end{titlepage}
+
+\clearpage
+\begin{multicols}{2}
+\setlength{\columnseprule}{0.3pt}
+\begin{hymn}{42}{Dood in sonde, ver van God}{\#71}
+\begin{stanza}
+Dood in sonde, ver van God,\\
+Soek die mens maar net genot:\\
+Met geen God ontfermend goed;\\
+Met geen hoop oor graf en dood.
+\end{stanza}
+\begin{chorus}
+\setchorusline{God bied u sy saligheid –}
+God bied u sy saligheid –\\
+Dis nou u geleentheid.
+\end{chorus}
+\begin{stanza}
+God roep u van sondeweë;\\
+Roep u nou om toe te tree\\
+Tot sy enge, ware weg,\\
+Wat u voortlei in sy reg.
+\end{stanza}
+\begin{stanza}
+Wil u sterf? Dit was vir u\\
+Hy sy lewe het kom gee\\
+Lewe wat sy lig laat skyn;\\
+Bloed wat was van sonde rein.
+\end{stanza}
+\begin{stanza}
+Die genadetyd gaan oor\\
+As God u nie meer sal hoor;\\
+Nou's die aangename tyd\\
+Waar God nog so met u pleit.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{42}{Dood in sonde, ver van God}{\#71}
+\begin{stanza}
+Dood in sonde, ver van God,\\
+Soek die mens maar net genot:\\
+Met geen God ontfermend goed;\\
+Met geen hoop oor graf en dood.
+\end{stanza}
+\begin{chorus}
+\setchorusline{God bied u sy saligheid –}
+God bied u sy saligheid –\\
+Dis nou u geleentheid.
+\end{chorus}
+\begin{stanza}
+God roep u van sondeweë;\\
+Roep u nou om toe te tree\\
+Tot sy enge, ware weg,\\
+Wat u voortlei in sy reg.
+\end{stanza}
+\begin{stanza}
+Wil u sterf? Dit was vir u\\
+Hy sy lewe het kom gee\\
+Lewe wat sy lig laat skyn;\\
+Bloed wat was van sonde rein.
+\end{stanza}
+\begin{stanza}
+Die genadetyd gaan oor\\
+As God u nie meer sal hoor;\\
+Nou's die aangename tyd\\
+Waar God nog so met u pleit.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{40}{If all things were mine}{\#49}
+\begin{stanza}
+Fintu fyonse nga fyandi, te Yesu,\\
+Mweo wandi wa nshi pano calo?\\
+Bushe m'tima wasango kutusha,\\
+Mwi fyonse 'filepita bwangu?\\
+Fintu fyonse nga fyandi, te Yesu,\\
+Bushe, mweo wandi wa nshi pano?\\
+Bushe, nsansa sha calo shapalana,\\
+Umweo 'wisulwa na Yesu.
+\end{stanza}
+\begin{stanza}
+Fyuma, kutemwa, nga fyafulisha,\\
+Ne shina lyandi, nga lyacindikwa,\\
+Na kwi shilya mwa Lesa nshikwete,\\
+Ukwa ukwensho mweo wandi.\\
+Fintu fyonse nga fyandi, te Yesu,\\
+Uwalimfwilile pa lupanda.\\
+Bushe, calo campe 'kwa kufyu\_ka?\\
+Mu bucushi bwandi no mwenso.
+\end{stanza}
+\begin{stanza}
+Fyonse fyanaka 'pabula Yesu,\\
+Mu kati ka bucushi ne membu.\\
+Mweo wa mfifi 'pabula Yesu.\\
+Bushiku, filamba, bulanda.\\
+Nga ndi no mweo, pabula Yesu.\\
+Bushe, nga nkafwa, cikaba shani?\\
+We 'kwingila Mbo, pabula Ye\_su,\\
+Apabula Yesu, pe na pe.
+\end{stanza}
+\begin{stanza}
+Nsamwa, nkwate fyonse muli Yesu,\\
+Fya kuposha m'tima wa bulanda.\\
+Takuli 'membu, atemwa b'landa.\\
+Te'ti omfwe, 'belelo luse.\\
+Nga ndi ne fyonse muli Yesu fye,\\
+Nelyo kamo mu icalo conse.\\
+Kanshi fyonse e fyandi muli Yesu,\\
+Pantu bukabilo alempa.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{2}{O tell me more}{\#7}
+\begin{stanza}
+Phinda, ulande ngoMsindisi,\\
+Ngitshele ngaYe kabanzi,\\
+Ngomsa waKhe, nangensindiso;\\
+Ligugu igama laKhe.
+\end{stanza}
+\begin{chorus}
+\setchorusline{Mawuphinde ngengiMthanda,}
+Mawuphinde ngengiMthanda,\\
+Ngiholwe yisandla saKhe,\\
+Onamandla okungilonda,\\
+Ngize ngiMbone phezulu.
+\end{chorus}
+\begin{stanza}
+Ngitshele ngendaba emnandi,\\
+Eduduz' umoya wami;\\
+NgeNkosi yezulu ikhala\\
+Iz'nyembezi ngenxa yami.
+\end{stanza}
+\begin{stanza}
+Ngitshele ngaYe Othulisa\\
+Iz'vunguvungu zosizi;\\
+Ngemva komnyama kuzokusa\\
+Kwabasentandweni yaKhe.
+\end{stanza}
+\begin{stanza}
+Ngitshele ngokubuya kwaKhe,\\
+OyiNkosi yokuthula;\\
+Woza, Mhlengi, uphelelise\\
+Umsebenzi siKubonge.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{32}{Hymn 32 (Chewa)}{}
+\end{hymn}
+
+
+\end{multicols}
+\end{document}
