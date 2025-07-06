@@ -1,0 +1,277 @@
+
+\documentclass{article}
+\usepackage{FP}
+\usepackage{graphicx}
+\usepackage{multicol}
+\begin{document}
+
+\begin{titlepage}
+  \centering
+  \vspace*{0.1\textheight}
+  {\fontsize{60}{72}\selectfont \bfseries sbsh sh \par}
+  \vspace{0.1\textheight}
+  \includegraphics[height=0.3\textheight,keepaspectratio]{input/image.jpg}
+  \par\vspace{0.1\textheight}
+  {\huge dj \par}
+\end{titlepage}
+
+\clearpage
+\begin{multicols}{2}
+\setlength{\columnseprule}{0.3pt}
+\begin{hymn}{202}{O help us, lord}{}
+\begin{stanza}
+O help us, Lord, to seek Thy face,\\
+And touch our hearts that we may pray;\\
+The foe is strong: We need Thy grace\\
+And power to keep us in the Way.
+\end{stanza}
+\begin{chorus}
+\setchorusline{Weak in ourselves we fear the foe}
+Weak in ourselves we fear the foe\\
+But love the path where Jesus trod;\\
+Strong in His strength we forward go;\\
+Our hope is in the living God.
+\end{chorus}
+\begin{stanza}
+O give us understanding hearts,\\
+And help us now to intercede\\
+For those who in the darkness dwell,\\
+That they may see and feel their need.
+\end{stanza}
+\begin{stanza}
+Possess our hearts and fill our minds\\
+With light and wisdom from on high,\\
+That we may manifest Thy life\\
+And vile affections crucify.
+\end{stanza}
+\begin{stanza}
+Whom have we, Lord, in heaven but Thee? -\\
+And there is none on earth beside -\\
+So tender, patient, kind and true,\\
+A loyal, faithful friend and guide.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{326}{When sore afflictions}{}
+\begin{stanza}
+When sore afflictions press my soul,\\
+And darkness gathers o'er my way,\\
+I look above and trust in Him\\
+Who ever leads me night and day.
+\end{stanza}
+\begin{stanza}
+When gloomy fears possess my heart,\\
+I seek the shelter of His breast;\\
+Where all is peace and joy and light,\\
+In confidence I calmly rest.
+\end{stanza}
+\begin{stanza}
+What full provision God has made\\
+For those who daily seek His care;\\
+The pure in heart shall see His face,\\
+His ear is open to their prayer.
+\end{stanza}
+\begin{stanza}
+The race is not unto the swift,\\
+The strong no glories ever win;\\
+The secret of all victory is\\
+Obedience to the Christ within.
+\end{stanza}
+\begin{stanza}
+Then fainting not, I press along\\
+The path where He has gone before,\\
+The bloodstained path which leads to God,\\
+To heaven and home forevermore.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{31}{Hasten to the place of refuge}{}
+\begin{stanza}
+Hasten to the place of refuge;\\
+Do not linger on the plain.\\
+If you hope to dwell with Jesus,\\
+You must needs be born again.\\
+Do not build your hope on theory:\\
+Righteous acts will not avail.\\
+Christ in you, the hope of glory,\\
+Is the Rock which cannot fail.
+\end{stanza}
+\begin{chorus}
+\setchorusline{Heed the warning, come to Jesus:}
+Heed the warning, come to Jesus:\\
+Of all friends He is the best.\\
+Do not grieve His Holy Spirit;\\
+Come, and He will give you rest.
+\end{chorus}
+\begin{stanza}
+Come and drink the living waters;\\
+Bread of life is free to all.\\
+Do not slight the invitation;\\
+Hearken to the Saviour's call.\\
+Full salvation Jesus offers,\\
+Victory over self and sin.\\
+At the door of hope He's waiting,\\
+There to bid you "Welcome in."
+\end{stanza}
+\begin{stanza}
+Time is ever speeding onward;\\
+Here you cannot hope to stay.\\
+Death is ever drawing nearer,\\
+And the call you must obey.\\
+In His tender love and mercy,\\
+Jesus waits to lead you home;\\
+From His light and love and presence,\\
+Why will you in darkness roam?
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{83}{In this world of woe}{}
+\begin{stanza}
+In this world of woe and sighing,\\
+Broken hearts are seeking rest,\\
+Sick of sin and faint from crying,\\
+Longing to be healed and blest.\\
+God in pity sees your sorrow,\\
+Longs to give your heart relief;\\
+Don't despise Him lest tomorrow\\
+Should for you mean endless grief.
+\end{stanza}
+\begin{chorus}
+\setchorusline{With your heart you hear Him pleading;}
+With your heart you hear Him pleading;\\
+Don't resist His gentle touch:\\
+You can safely trust His leading,\\
+And you need Him, oh! so much.
+\end{chorus}
+\begin{stanza}
+All your life you've sought for pleasure;\\
+Still your soul is ill at ease:\\
+Earth with all its gilded treasure\\
+Fails to satisfy or please.\\
+Every day some new illusion\\
+Seems to offer what you crave:\\
+Thus the author of confusion\\
+Leads men to a Christless grave.
+\end{stanza}
+\begin{stanza}
+Friend, just now your heart is tender:\\
+You have heard the Saviour's call.\\
+Let Him be your soul's defender;\\
+Yield Him now your life, your all.\\
+Eagerly the angels listen\\
+For the yes that sets you free;\\
+There where all His jewels glisten\\
+You may dwell eternally.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{72}{Why should I walk?}{}
+\begin{stanza}
+Why should I walk in paths of night\\
+Which give no peace nor pure delight?\\
+My way is wrong, God's way is right:\\
+His way is seen in Jesus.
+\end{stanza}
+\begin{chorus}
+\setchorusline{The truth of God my heart has won;}
+The truth of God my heart has won;\\
+He'll finish what He has begun;\\
+In earth or heaven there is none\\
+Who can compare with Jesus.
+\end{chorus}
+\begin{stanza}
+Man's wisdom leads into a maze,\\
+And error grows in bypath ways;\\
+But hearts are filled with joy and praise,\\
+Who see the truth in Jesus.
+\end{stanza}
+\begin{stanza}
+My human power cannot avail;\\
+In war with sin it can but fail;\\
+By this alone I can prevail:\\
+Receiving life in Jesus.
+\end{stanza}
+\begin{stanza}
+Though sin assail me like a flood,\\
+I'll plead His name and precious blood;\\
+The pure and spotless Son of God\\
+And sinners' friend is Jesus.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{52}{Ek is tevrede in my Heer}{\#253}
+\begin{stanza}
+Ek is tevrede in my Heer;\\
+My rust'loos hart is kalm en stil,\\
+My siel, so moeg, vind rus in Hom.\\
+My vreugde is net in sy wil;\\
+My siel sing nou 'n soete lof;\\
+My gees is geen gevang'ne meer:\\
+Terwyl ek hier sy Naam bely,\\
+Volg ek Hom as my Koning, Heer.
+\end{stanza}
+\begin{chorus}
+\setchorusline{Gemeenskap o hoe god'lik rein}
+Gemeenskap o hoe god'lik rein\\
+Onmeetlik' liefde, hemelsoet.\\
+My siel dit ken 'n skuilplek daar,\\
+Dis aan my dierbaar' Meesters' voet.
+\end{chorus}
+\begin{stanza}
+Sy liefde het my hart oorwin;\\
+Leef in die sonde voort nie meer;\\
+Maar veilig van die Satanslis\\
+Lê ek aan Jesus' bors my neer.\\
+Ek hoor sy liefdevolle stem;\\
+Sy aangesig skyn wonderskoon,\\
+Terwyl sy tere sagte stem\\
+My lewe met genot bekroon.
+\end{stanza}
+\begin{stanza}
+Ek volg Hom na; Gods' sond'loos' Lam;\\
+Op weë rein en wonderbaar,\\
+Totdat ek staan volmaak voor Hom,\\
+Sy beeld in my word openbaar.\\
+Breek dan die silwerkoord vir my,\\
+Dat ek geen dae hier meer tel,\\
+Gaan ek die ewig' vreugde in\\
+Waar eeu na eeu soet heen sal snel.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{91}{Heer U is my ewig' erfdeel}{\#303}
+\begin{stanza}
+Heer U is my ewig' erfdeel,\\
+Meer as vriend is U vir my.\\
+Op my pelgrimsreis op aarde\\
+Laat my wandel aan u sy.\\
+Aan u sy, dig naby.\\
+Aan u sy, dig naby.\\
+Op my pelgrimsreis op aarde\\
+Laat my wandel aan u sy.
+\end{stanza}
+\begin{stanza}
+Nie gemak of aardse vreugdes\\
+Nie vir roem bid ek vandag;\\
+Graag sal ek steeds swoeg en swaarkry,\\
+En vertrou steeds op u krag.\\
+Aan u sy, dig naby.\\
+Aan u sy, dig naby.\\
+Graag sal ek steeds swoeg en swaarkry,\\
+En vertrou steeds op u krag.
+\end{stanza}
+\begin{stanza}
+Dra my oor die lewensee Heer,\\
+Deur die somber doodsvallei\\
+Sodat ek eendag saam met U,\\
+Mag die hemel binnegaan.\\
+Aan u sy, dig naby.\\
+Aan u sy, dig naby.\\
+Graag sal ek eendag saam met U,\\
+Mag die hemel binnegaan.
+\end{stanza}
+\end{hymn}
+
+
+\end{multicols}
+\end{document}
