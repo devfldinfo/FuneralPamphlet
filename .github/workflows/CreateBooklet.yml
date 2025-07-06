@@ -5,147 +5,74 @@ on:
     workflows: ["Compile LaTeX Files"]
     types:
       - completed
-  workflow_dispatch: # This will trigger the first job, which then checks for the file
+  workflow_dispatch:
 
 permissions:
-  contents: write # Grant write access for committing and pushing
+  contents: write  # Grant write access for committing and pushing
 
 jobs:
-  # This job checks for the presence of the inprogress.inprogress file
-  check_flag_exists:
-    runs-on: ubuntu-latest
-    outputs:
-      should_run_booklets: ${{ steps.file_check.outputs.exists }} # Output true/false based on file existence
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-
-      - name: Check for inprogress.inprogress file in input folder
-        id: file_check # Assign an ID to this step to reference its outputs
-        run: |
-          INPROGRESS_FILE="input/inprogress.inprogress"
-          if [ -f "$INPROGRESS_FILE" ]; then
-            echo "The file '$INPROGRESS_FILE' is present. Booklet generation will proceed."
-            echo "exists=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "The file '$INPROGRESS_FILE' is NOT present. Skipping booklet generation."
-            echo "exists=false" >> "$GITHUB_OUTPUT"
-          fi
-        shell: bash 
-  
   generate-booklets:
     runs-on: ubuntu-latest
-    needs: check_flag_exists
-    if: needs.check_flag_exists.outputs.should_run_booklets == 'true'
 
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
+
+   #   - name: Download Compiled PDFs
+   #     uses: actions/download-artifact@v4
+   #     with:
+   #      name: compiled-pamphlets
+   #       path: output/
 
       - name: Install PDF Processing Tools
         run: |
           sudo apt update
           sudo apt install -y texlive-extra-utils
-
-      # --- NEW DEBUG STEP: Examine contents of output/ before processing ---
-      - name: Debug Output Directory Contents Before Processing
-        run: |
-          echo "Contents of output/ directory (before processing):"
-          ls -l output/
-          echo "File types in output/ directory:"
-          file output/* || true # Use || true to prevent job failure if output/* matches no files
-        shell: bash
-
       - name: Process PDF Files
         run: |
-          # Ensure output directory exists for processing downloaded artifacts
-          mkdir -p output/
-
-          # Loop through files that potentially match, but validate strictly inside
-          # We use "shopt -s nullglob" to ensure the loop doesn't run if no files match
-          # and set `files` to an array to handle spaces in filenames correctly.
-          shopt -s nullglob # Ensures the glob expands to nothing if no matches
-          files=(output/*" - View.pdf") # Array to correctly handle spaces and multiple files
-
-          if [ ${#files[@]} -eq 0 ]; then
-            echo "No files ending with ' - View.pdf' found in output/ to process."
-          else
-            for file in "${files[@]}"; do
-              # Strict validation: Check if the filename ends with " - View.pdf"
-              if [[ "$file" == *" - View.pdf" ]]; then
-                # Check if the file actually exists and is a regular file
-                if [[ -f "$file" ]]; then
-                  echo "Processing booklet for: $file"
-                  # Extract base name (e.g., 'Document' from 'Document - View.pdf')
-                  # Using basename to get just the filename part, then removing suffix
-                  base_name=$(basename "$file" " - View.pdf")
-                  
-                  # It's safer to ensure the output name is generated correctly from the base_name
-                  output_print_pdf="${base_name} - Print.pdf"
-                  
-                  # Check if pdfbook2 can process it (basic header check)
-                  # This isn't a full validation but can catch basic non-PDFs earlier
-                  if pdfinfo "$file" > /dev/null 2>&1; then
-                      pdfbook2 "$file" # Creates 'OriginalName-book.pdf'
-                      # The output of pdfbook2 is usually based on the input filename.
-                      # We expect 'output/DoNotDel - View-book.pdf' if input was 'output/DoNotDel - View.pdf'
-                      expected_book_name="${file%.*}-book.pdf"
-
-                      if [[ -f "$expected_book_name" ]]; then
-                        mv "$expected_book_name" "output/$output_print_pdf"
-                        echo "Created output/$output_print_pdf"
-                      else
-                        echo "Error: pdfbook2 failed to create expected booklet file for $file. Expected: $expected_book_name"
-                        exit 1 # Fail the job if booklet creation failed unexpectedly
-                      fi
-                  else
-                      echo "Warning: $file is not a valid PDF or is corrupted. Skipping booklet generation for this file."
-                  fi
-                else
-                  echo "Warning: File '$file' found by glob is not a regular file. Skipping."
-                fi
-              else
-                echo "Warning: File '$file' does not end with ' - View.pdf'. Skipping."
-              fi
-            done
-          fi
-
-      - name: Auto Commit PDFs (View and Print versions)
-        # Only commit if there are PDFs to commit.
-        # This will commit all PDFs in output/, including the original ' - View.pdf'
+          for file in output/*\ -\ View.pdf; do
+            if [[ -f "$file" ]]; then
+              echo "Processing booklet for: $file"
+              base_name="${file% - View.pdf}"
+              pdfbook2 "$file"
+              mv "${file%.*}-book.pdf" "${base_name} - Print.pdf"
+              echo "Created ${base_name} - Print.pdf"
+            else
+              echo "Warning: File not found for booklet processing: $file"
+            fi
+          done
+      - name: Auto Commit PDFs
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: "Compiled LaTeX files with View and Print versions"
           push_options: '--force'
           file_pattern: 'output/*.pdf'
 
-      - name: Upload PDFs (both View and Print)
+      - name: Upload PDFs
         uses: actions/upload-artifact@v4
         with:
           name: compiled-and-booklet-pdfs
           path: output/*.pdf
 
-      # --- Delete the inprogress file from input/ ---
-#      - name: Delete inprogress file
-#        id: delete_inprogress
-#        run: |
-#          INPROGRESS_FILE="input/inprogress.inprogress"
-#          if [ -f "$INPROGRESS_FILE" ]; then
-#            echo "Deleting $INPROGRESS_FILE..."
-#            rm "$INPROGRESS_FILE"
-#            echo "file_deleted=true" >> "$GITHUB_OUTPUT"
-#            echo "$INPROGRESS_FILE deleted."
-#          else
-#            echo "$INPROGRESS_FILE not found, skipping deletion."
-#            echo "file_deleted=false" >> "$GITHUB_OUTPUT"
-#          fi
-#        shell: bash
-
-#      - name: Commit inprogress file deletion
-#        if: steps.delete_inprogress.outputs.file_deleted == 'true'
-#        uses: stefanzweifel/git-auto-commit-action@v4
-#        with:
-#          commit_message: "Cleaned up inprogress file"
-#          commit_options: '--no-verify --allow-empty'
-#          file_pattern: 'input/inprogress.inprogress'
-#          push_options: '--force'
+      # --- NEW STEP: Delete the inprogress file ---
+      - name: Delete inprogress file
+        run: |
+          if [ -f "input/inprogress.inprogress" ]; then
+            echo "Deleting input/inprogress.inprogress..."
+            rm "input/inprogress.inprogress"
+            echo "input/inprogress.inprogress deleted."
+          else
+            echo "input/inprogress.inprogress not found, skipping deletion."
+          fi
+        # This action uses git-auto-commit-action to commit the deletion,
+        # otherwise the file will be deleted on the runner but not in the repo.
+        # Ensure you want to commit this deletion back to the repository.
+      - name: Commit inprogress file deletion
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "Cleaned up inprogress file"
+          # Only commit if changes exist (i.e., if the file was deleted)
+          commit_options: '--no-verify --allow-empty'
+          file_pattern: 'input/inprogress.inprogress'
+          # If you don't want to push immediately, remove push_options or set it to ''
+          push_options: '--force'
