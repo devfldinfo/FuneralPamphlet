@@ -126,26 +126,26 @@ jobs:
           path: output/*.pdf
 
       # --- Delete the inprogress file from input/ ---
-      - name: Delete inprogress file
-        id: delete_inprogress
-        run: |
-          INPROGRESS_FILE="input/inprogress.inprogress"
-          if [ -f "$INPROGRESS_FILE" ]; then
-            echo "Deleting $INPROGRESS_FILE..."
-            rm "$INPROGRESS_FILE"
-            echo "file_deleted=true" >> "$GITHUB_OUTPUT"
-            echo "$INPROGRESS_FILE deleted."
-          else
-            echo "$INPROGRESS_FILE not found, skipping deletion."
-            echo "file_deleted=false" >> "$GITHUB_OUTPUT"
-          fi
-        shell: bash
+#      - name: Delete inprogress file
+#        id: delete_inprogress
+#        run: |
+#          INPROGRESS_FILE="input/inprogress.inprogress"
+#          if [ -f "$INPROGRESS_FILE" ]; then
+#            echo "Deleting $INPROGRESS_FILE..."
+#            rm "$INPROGRESS_FILE"
+#            echo "file_deleted=true" >> "$GITHUB_OUTPUT"
+#            echo "$INPROGRESS_FILE deleted."
+#          else
+#            echo "$INPROGRESS_FILE not found, skipping deletion."
+#            echo "file_deleted=false" >> "$GITHUB_OUTPUT"
+#          fi
+#        shell: bash
 
-      - name: Commit inprogress file deletion
-        if: steps.delete_inprogress.outputs.file_deleted == 'true'
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: "Cleaned up inprogress file"
-          commit_options: '--no-verify --allow-empty'
-          file_pattern: 'input/inprogress.inprogress'
-          push_options: '--force'
+#      - name: Commit inprogress file deletion
+#        if: steps.delete_inprogress.outputs.file_deleted == 'true'
+#        uses: stefanzweifel/git-auto-commit-action@v4
+#        with:
+#          commit_message: "Cleaned up inprogress file"
+#          commit_options: '--no-verify --allow-empty'
+#          file_pattern: 'input/inprogress.inprogress'
+#          push_options: '--force'
