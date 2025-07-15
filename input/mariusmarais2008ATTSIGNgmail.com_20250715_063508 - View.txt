@@ -1,0 +1,341 @@
+
+\documentclass{article}
+\usepackage{FP}
+\usepackage{graphicx}
+\usepackage{multicol}
+\begin{document}
+
+\begin{titlepage}
+  \centering
+  \vspace*{0.1\textheight}
+  {\fontsize{60}{72}\selectfont \bfseries shshhs sjshe \par}
+  \vspace{0.1\textheight}
+  \includegraphics[height=0.3\textheight,keepaspectratio]{input/image.jpg}
+  \par\vspace{0.1\textheight}
+  {\huge sdjdj ej \par}
+\end{titlepage}
+
+\clearpage
+\begin{multicols}{2}
+\setlength{\columnseprule}{0.3pt}
+\begin{hymn}{312}{The lord my shepherd is}{}
+\begin{stanza}
+The Lord my Shepherd is -\\
+My heart no want can know;\\
+He gently leads me by the hand\\
+Where verdant pastures grow.\\
+He knows my every need,\\
+And safe with Him I go,\\
+In calm and quietness to rest\\
+Where living waters flow.
+\end{stanza}
+\begin{stanza}
+When wearied with the strife,\\
+My soul He doth restore;\\
+His lovingkindness woos my heart\\
+To love Him more and more.\\
+The path of righteousness\\
+With Him I gladly take.\\
+Why should I stray? He leads the way\\
+E'en for His own name's sake.
+\end{stanza}
+\begin{stanza}
+To walk the vale of death\\
+Is sweet, with Jesus near;\\
+His rod and staff they comfort me -\\
+No evil will I fear.\\
+My table He prepares\\
+In presence of the foe;\\
+When His anointing I receive,\\
+My cup doth overflow.
+\end{stanza}
+\begin{stanza}
+Goodness and mercy shall\\
+Be with me all my days;\\
+Preserved and kept by Him I am\\
+From all the bypath ways.\\
+His presence with me now\\
+Brings joy forevermore,\\
+And through a long eternity\\
+His ways I shall adore.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{412}{When life is ended}{}
+\begin{stanza}
+When life is ended and I must travel\\
+Through death's dark chambers, I need not fear:\\
+If I have Jesus to guard and guide me,\\
+I walk securely with One so dear.
+\end{stanza}
+\begin{stanza}
+Though dark the valley that lies before me,\\
+A light far brighter than noonday sun\\
+Shines o'er my pathway, and hope eternal\\
+I see in Jesus; earth's day is done.
+\end{stanza}
+\begin{stanza}
+I look to Jesus, bright Star to guide me;\\
+Twas Jesus vanquished death and the grave;\\
+Twas Jesus only bore my transgression,\\
+For Jesus only my soul could save.
+\end{stanza}
+\begin{stanza}
+Oh, glorious dawning, blest resurrection!\\
+When I with Jesus come forth again,\\
+I shall adore Him, my wondrous Saviour:\\
+He freed my soul from sin's curse and stain.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{400}{When Jesus comes}{}
+\begin{stanza}
+When Jesus comes to reward His servants,\\
+Whether it be noon or night,\\
+Faithful to Him will He find us watching,\\
+With our lamps all trimmed and bright?
+\end{stanza}
+\begin{chorus}
+\setchorusline{Oh, can we say we are truly ready,}
+Oh, can we say we are truly ready,\\
+Ready for the soul's long home?\\
+Say, will He find you and me still watching,\\
+Watching, waiting, when the Lord shall come?
+\end{chorus}
+\begin{stanza}
+If at the dawn of the early morning\\
+He shall call us one by one -\\
+When to the Lord we restore our talents,\\
+Will He answer us "Well done!"
+\end{stanza}
+\begin{stanza}
+Have we been true to the trust He left us?\\
+Do we seek to do our best?\\
+If in our hearts there is naught condemns us,\\
+We shall have a glorious rest.
+\end{stanza}
+\begin{stanza}
+blessèd are those whom the Lord finds watching -\\
+In His glory they shall share;\\
+If He should come at the dawn or midnight,\\
+Will He find us watching there?
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{32}{Die stem van Jesus roep}{\#114}
+\begin{stanza}
+Die stem van Jesus roep my nou.\\
+Graag staan ek op en gaan,\\
+By Hom wil ek in vrede woon,\\
+Hy bied vergifnis aan.
+\end{stanza}
+\begin{chorus}
+\setchorusline{Ek sal gaan, belas met sonde,}
+Ek sal gaan, belas met sonde,\\
+Moeg, van skuld bewus,\\
+Hoe onwaardig ook, ontvang my\\
+Tot beloofde rus.
+\end{chorus}
+\begin{stanza}
+My gees dit ken die vrede nie,\\
+Onrustig dwaal ek rond,\\
+Maak so my smartlik' laste swaar,\\
+Verkort my lewenstond.
+\end{stanza}
+\begin{stanza}
+Genade groot hou Hy my uit\\
+Wat troos en red en lei.\\
+n Weiveld altyd fris en groen\\
+En waterstrome vry.
+\end{stanza}
+\begin{stanza}
+Ek hoor Hy roep herhalend weer\\
+In sagte klanke soet:\\
+``'n Rus wat ewig rus sal wees,\\
+Wag u vermoeide voet.''
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{42}{Dood in sonde, ver van God}{\#71}
+\begin{stanza}
+Dood in sonde, ver van God,\\
+Soek die mens maar net genot:\\
+Met geen God ontfermend goed;\\
+Met geen hoop oor graf en dood.
+\end{stanza}
+\begin{chorus}
+\setchorusline{God bied u sy saligheid –}
+God bied u sy saligheid –\\
+Dis nou u geleentheid.
+\end{chorus}
+\begin{stanza}
+God roep u van sondeweë;\\
+Roep u nou om toe te tree\\
+Tot sy enge, ware weg,\\
+Wat u voortlei in sy reg.
+\end{stanza}
+\begin{stanza}
+Wil u sterf? Dit was vir u\\
+Hy sy lewe het kom gee\\
+Lewe wat sy lig laat skyn;\\
+Bloed wat was van sonde rein.
+\end{stanza}
+\begin{stanza}
+Die genadetyd gaan oor\\
+As God u nie meer sal hoor;\\
+Nou's die aangename tyd\\
+Waar God nog so met u pleit.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{67}{My Diens Is Nie aan Mense}{\#325}
+\begin{stanza}
+My diens is nie aan mense,\\
+Tot mens nie my gebed,\\
+Maar voor u oë, Heer, Jesus\\
+Wandel ek nougeset.\\
+Slegs voor my eie Meester\\
+Val ek of bly ek staan:\\
+Wat ander dan van my sê,\\
+Heg Hy geen waarde aan.
+\end{stanza}
+\begin{chorus}
+\setchorusline{My diens is maar net aan U, aan U,}
+My diens is maar net aan U, aan U,\\
+My diens is maar net aan U.\\
+In swakheid of krag, in dag of nag,\\
+My diens is maar net aan U.
+\end{chorus}
+\begin{stanza}
+Wil U my voetstap rig, Heer,\\
+Deur u groot liefd' vir my;\\
+Trou aan u lewensvoorbeeld,\\
+Trou aan u wil te bly.\\
+Wandel ek soms in skadu's\\
+Of in die middaglig,\\
+Mag dan my gees gerus wees\\
+Daar voor u aangesig.
+\end{stanza}
+\begin{stanza}
+Ek weet die hart is sondig,\\
+Niemand kan dit vertrou;\\
+Geen mens sal self sy voetstap\\
+Hier reg gerig kan hou.\\
+Hy kan slegs wyslik wandel,\\
+Opreg en doelgerig,\\
+Wat met sy oë op Jesus\\
+Steeds wandel in die Lig.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{100}{Incline your ear}{\#155}
+\begin{stanza}
+Bek' indlebe, uze,\\
+Lalela uMhlengi,\\
+Ngena emnyango wethemba\\
+Kukhona ithuba.
+\end{stanza}
+\begin{chorus}
+\setchorusline{Muzwe Ebiza,}
+Muzwe Ebiza,\\
+Fun' Akushiye,\\
+Masinyane iNkosi\\
+Yovala umnyango.
+\end{chorus}
+\begin{stanza}
+UJesu ulinda\\
+Emanzin' empilo,\\
+UMenze umngane wakho,\\
+Manje naphakade.
+\end{stanza}
+\begin{stanza}
+Lwanele uthando\\
+Nokuthula kwaKhe;\\
+Impilo yaKhe engcwele\\
+Izohlala kuwe.
+\end{stanza}
+\begin{stanza}
+Wakufela, wena,\\
+Akuhlawulele,\\
+Ubalekele ulaka\\
+LukaNkulunkulu.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{92}{Nani husadiki}{}
+\begin{stanza}
+Nani husadiki ujumbe wetu,\\
+Kuhusu Yesu mwana wa Mungu,\\
+Tunapomwona hana umbo wala\\
+Uzuri hata tumtamani,\\
+Na uso wake umeharibiwa\\
+Zaidi ya mtu ye yote yule,\\
+Wengine watamstaajabia,\\
+Na wafalme watamfumbia vinywa.
+\end{stanza}
+\begin{chorus}
+\setchorusline{Ataona mazao ya taabu zake,}
+Ataona mazao ya taabu zake,\\
+Na ataridhika nayo sana,\\
+Mwenye haki, kwa maarifa yake\\
+Atafanya wengi kuwa wenye haki.
+\end{chorus}
+\begin{stanza}
+Yesu alidharauliwa sana,\\
+Hata kukataliwa na watu,\\
+Mtu mwenye huzuni na majonzi,\\
+Aliyejua masikitiko,\\
+Hatukumhesabu kuwa kitu,\\
+Na tulimficha nyuso zetu,\\
+Kwa kuwa tulimdhania kuwa\\
+Amepigwa na kuteswa na Mungu tu.
+\end{stanza}
+\begin{stanza}
+Hakika amechukua mwenyewe\\
+Udhaifu wetu na huzuni,\\
+Hata adhabu ya amani yetu\\
+Ilikuwa juu yake Yesu,\\
+Aliumizwa kwa makosa yetu,\\
+Alichomwa kwa maovu yetu,\\
+Kwa dhambi zetu alichubuliwa,\\
+Kwa kupigwa kwake sisi tumepona.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{34}{Yesu atakuongoza}{\#80}
+\begin{stanza}
+Yesu atakuongoza\\
+Hata kwenye mabonde,\\
+Usihofu kufuata,\\
+Atakuongeza nguvu.
+\end{stanza}
+\begin{chorus}
+\setchorusline{Ushiriki dhiki zake,}
+Ushiriki dhiki zake,\\
+Nawe ufarikipo\\
+Mungu atakupa tuzo\\
+Na furaha milele.
+\end{chorus}
+\begin{stanza}
+Usiache kupigana\\
+Vita ingawa kali,\\
+Vumilia naye Mungu,\\
+Na utashinda yote.
+\end{stanza}
+\begin{stanza}
+Dumu naye, usirudi,\\
+Aliumizwa kwako,\\
+Shiriki mateso yake,\\
+Nawe utatukuzwa.
+\end{stanza}
+\begin{stanza}
+Nenda mbio kwa subira,\\
+Kwa mede ya milele,\\
+Pata taji ya uzima,\\
+Kwa nguvu zake Mungu.
+\end{stanza}
+\end{hymn}
+
+
+\end{multicols}
+\end{document}
