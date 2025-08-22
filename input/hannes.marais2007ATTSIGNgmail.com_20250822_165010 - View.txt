@@ -1,0 +1,166 @@
+
+\documentclass{article}
+\usepackage{FP}
+\usepackage{graphicx}
+\usepackage{multicol}
+\begin{document}
+
+\begin{titlepage}
+  \centering
+  \vspace*{0.1\textheight}
+  {\fontsize{60}{72}\selectfont \bfseries Gospel hymns \par}
+  \vspace{0.1\textheight}
+  \includegraphics[height=0.3\textheight,keepaspectratio]{input/image.jpg}
+  \par\vspace{0.1\textheight}
+  {\huge 22 August 2025 \par}
+\end{titlepage}
+
+\clearpage
+\begin{multicols}{2}
+\setlength{\columnseprule}{0.3pt}
+\begin{hymn}{1}{Nisimulie ya Yesu}{\#1}
+\begin{stanza}
+Nisimulie ya Yesu,\\
+Iandike moyoni,\\
+Hadithi iliyo tunu,\\
+Njema kuliko zote;\\
+Nieleze juu ya wimbo,\\
+Wa wale malaika,\\
+``Mtukuze Mungu juu na\\
+Amani duniani.''
+\end{stanza}
+\begin{chorus}
+\setchorusline{Nisimulie ya Yesu,}
+Nisimulie ya Yesu,\\
+Iandike moyoni\\
+Hadithi iliyo tunu,\\
+Njema kuliko zote.
+\end{chorus}
+\begin{stanza}
+Eleza ya siku zile,\\
+Alipokaa nyikani,\\
+Akajaribiwa huko,\\
+Lakini akashinda;\\
+Eleza taabu za kwake,\\
+Nayo masikitiko,\\
+Yeye alidhihakiwa,\\
+Maskini, hana kwake.
+\end{stanza}
+\begin{stanza}
+Eleza ya msalaba,\\
+Alipoteswa sana,\\
+Jinsi alivyofariki,\\
+Na alivyofufuka,\\
+Katika hadithi hii,\\
+Naona pendo lake,\\
+Nami nitamfuata\\
+Aliyenitesewa.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{2}{Yesu ni ujumbe}{\#10}
+\begin{stanza}
+Yesu ni ujumbe wetu,\\
+Tutamtaja Yesu,\\
+Tutamtukuza Yesu,\\
+Tutamwona Mwokozi.
+\end{stanza}
+\begin{chorus}
+\setchorusline{Yesu tu, hata milele,}
+Yesu tu, hata milele,\\
+Tumwimbaye ni Yesu,\\
+Mwokozi, Bwana, Mfalme,\\
+Mwenye heri ajaye.
+\end{chorus}
+\begin{stanza}
+Yesu ni Mwokozi wetu,\\
+Atusafisha dhambi,\\
+Atuhesabia haki,\\
+Anatuimarisha.
+\end{stanza}
+\begin{stanza}
+Yesu ndiye nguvu yetu,\\
+Akaa mioyoni mwetu,\\
+Tusihofu, tusisite,\\
+Atoa neema, nguvu.
+\end{stanza}
+\begin{stanza}
+Yesu ndiye Bwana wetu,\\
+Ni vema kumtii,\\
+Ee! tumtumikieni,\\
+Tuwe na wateule.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{181}{Neno la Bwana}{\#29}
+\begin{stanza}
+Neno la Bwana ninalithamini,\\
+Nazipenda amri zake,\\
+Linanisaidia kuona njia\\
+Hadi mwisho wa safari.
+\end{stanza}
+\begin{chorus}
+\setchorusline{Kuna thamani kuliko maelfu}
+Kuna thamani kuliko maelfu\\
+Ya dhahabu, tunu na vito,\\
+Kuketi miguuni pake Bwana,\\
+Nisikie anenapo.
+\end{chorus}
+\begin{stanza}
+Njia yake Bwana ni ya amani,\\
+Ikiwa aniongoza,\\
+Neno lake ni roho na uhai,\\
+Laniburudisha sana.
+\end{stanza}
+\begin{stanza}
+Namsikia na roho i huru\\
+Kumfuata Mwokozi,\\
+Nathamini neno lake moyoni,\\
+Namsifu kwa furaha.
+\end{stanza}
+\begin{stanza}
+Niwe hodari kutimiza amri\\
+Za Bwana zilizowekwa,\\
+Ee! Bwana elekeza moyo wangu,\\
+Nizifikiri daima.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{54}{Heri nyayo}{\#81}
+\begin{stanza}
+Heri nyayo za Mwokozi,\\
+Zanionyesha njia,\\
+Kama mwanga kwenye giza,\\
+Mwanga wa utukufu.
+\end{stanza}
+\begin{chorus}
+\setchorusline{Heri nyayo za Mwokozi,}
+Heri nyayo za Mwokozi,\\
+Kwangu ni hazina kubwa,\\
+Kwani zanielekeza,\\
+Niondoke dhambini,\\
+Nyayo hizo, nitazifuata tu.
+\end{chorus}
+\begin{stanza}
+Heri nyayo za Mwokozi,\\
+Zanionyesha haki,\\
+Zasaidia matesoni,\\
+Na kwenye shida zote.
+\end{stanza}
+\begin{stanza}
+Heri nyayo za Mwokozi,\\
+Imani huziona,\\
+Zaniongoza salama,\\
+Hata kwenye huzuni.
+\end{stanza}
+\begin{stanza}
+Nithamini kila wayo\\
+Wa miguu yako, Kristo.\\
+Nifuate siku zote,\\
+Hata tuonane juu.
+\end{stanza}
+\end{hymn}
+
+
+\end{multicols}
+\end{document}
