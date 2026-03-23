@@ -1,0 +1,687 @@
+
+\documentclass{article}
+\usepackage{FP}
+\usepackage{graphicx}
+\usepackage{multicol}
+\begin{document}
+
+\begin{titlepage}
+  \centering
+  \vspace*{0.1\textheight}
+  {\fontsize{60}{72}\selectfont \bfseries Nyimbo \par}
+  \vspace{0.1\textheight}
+  \includegraphics[height=0.3\textheight,keepaspectratio]{input/image.jpg}
+  \par\vspace{0.1\textheight}
+  {\huge 2026 - v2 \par}
+\end{titlepage}
+
+\clearpage
+\begin{multicols}{2}
+\setlength{\columnseprule}{0.3pt}
+\begin{hymn}{1}{Nisimulie ya Yesu}{\#1}
+\begin{stanza}
+Nisimulie ya Yesu,\\
+Iandike moyoni,\\
+Hadithi iliyo tunu,\\
+Njema kuliko zote;\\
+Nieleze juu ya wimbo,\\
+Wa wale malaika,\\
+``Mtukuze Mungu juu na\\
+Amani duniani.''
+\end{stanza}
+\begin{chorus}
+\setchorusline{Nisimulie ya Yesu,}
+Nisimulie ya Yesu,\\
+Iandike moyoni\\
+Hadithi iliyo tunu,\\
+Njema kuliko zote.
+\end{chorus}
+\begin{stanza}
+Eleza ya siku zile,\\
+Alipokaa nyikani,\\
+Akajaribiwa huko,\\
+Lakini akashinda;\\
+Eleza taabu za kwake,\\
+Nayo masikitiko,\\
+Yeye alidhihakiwa,\\
+Maskini, hana kwake.
+\end{stanza}
+\begin{stanza}
+Eleza ya msalaba,\\
+Alipoteswa sana,\\
+Jinsi alivyofariki,\\
+Na alivyofufuka,\\
+Katika hadithi hii,\\
+Naona pendo lake,\\
+Nami nitamfuata\\
+Aliyenitesewa.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{2}{Yesu ni ujumbe}{\#10}
+\begin{stanza}
+Yesu ni ujumbe wetu,\\
+Tutamtaja Yesu,\\
+Tutamtukuza Yesu,\\
+Tutamwona Mwokozi.
+\end{stanza}
+\begin{chorus}
+\setchorusline{Yesu tu, hata milele,}
+Yesu tu, hata milele,\\
+Tumwimbaye ni Yesu,\\
+Mwokozi, Bwana, Mfalme,\\
+Mwenye heri ajaye.
+\end{chorus}
+\begin{stanza}
+Yesu ni Mwokozi wetu,\\
+Atusafisha dhambi,\\
+Atuhesabia haki,\\
+Anatuimarisha.
+\end{stanza}
+\begin{stanza}
+Yesu ndiye nguvu yetu,\\
+Akaa mioyoni mwetu,\\
+Tusihofu, tusisite,\\
+Atoa neema, nguvu.
+\end{stanza}
+\begin{stanza}
+Yesu ndiye Bwana wetu,\\
+Ni vema kumtii,\\
+Ee! tumtumikieni,\\
+Tuwe na wateule.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{3}{Yesu alitoka kwa Baba}{\#9}
+\begin{stanza}
+Yesu alitoka kwa Baba,\\
+Na alimdhihirisha,\\
+Akatuonyesha ukweli,\\
+Tujue kusudi lake.
+\end{stanza}
+\begin{chorus}
+\setchorusline{Na tufuate siku zote,}
+Na tufuate siku zote,\\
+Katika hatua zake,\\
+Tukimtegemea Yesu,\\
+Tushinde kwa jina lake.
+\end{chorus}
+\begin{stanza}
+Giza zito linatawala\\
+Pande zote duniani,\\
+Kama tukifuata Yesu\\
+Tutaenenda nuruni.
+\end{stanza}
+\begin{stanza}
+Alitoa maisha yake,\\
+Wafungwa waokolewe,\\
+Akatuma mitume wake,\\
+Waeleze njia yake.
+\end{stanza}
+\begin{stanza}
+Atakaporudi Mwokozi,\\
+Atamshinda Shetani,\\
+Ndipo giza litatoweka,\\
+Mungu atatufariji.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{4}{Mungu wa Betheli wewe}{\#12}
+\begin{stanza}
+Mungu wa Betheli wewe,\\
+Ndiwe Mchungaji,\\
+Ulichunga baba zetu,\\
+Utuchunge vivyo.
+\end{stanza}
+\begin{stanza}
+Tumefika sasa mbele\\
+Ya kiti cha enzi,\\
+Mbele zako tunaweka\\
+Nadhiri na dua.
+\end{stanza}
+\begin{stanza}
+Uongoze miguu yetu,\\
+Tusibabaike,\\
+Tupe mahitaji yetu\\
+Yote ya kiroho.
+\end{stanza}
+\begin{stanza}
+Utufunike kwa mbawa\\
+Zako hadi mwisho,\\
+Ndipo tutakapodumu\\
+Nyumbani kwako juu.
+\end{stanza}
+\begin{stanza}
+Ee! utubariki hivyo,\\
+Twakusihi sana,\\
+Wewe tu ni Mungu wetu,\\
+Sasa na daima.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{5}{Mwokozi usiniache}{\#344}
+\begin{stanza}
+Mwokozi usiniache,\\
+Nishike mkono wangu,\\
+Kivuli cha mbawa zako,\\
+Ki juu yangu kuonyesha\\
+Mimi ni wako tu.
+\end{stanza}
+\begin{stanza}
+Napenda kuwepo kwako,\\
+Uniondolee shaka,\\
+Nisikie sauti yako,\\
+Ikiniamsha moyoni,\\
+Nifikie mede.
+\end{stanza}
+\begin{stanza}
+Ulindaye roho yangu,\\
+Uwe karibu kila saa,\\
+Vita inikabilipo,\\
+Na giza zito la dhambi,\\
+Sitafadhaika.
+\end{stanza}
+\begin{stanza}
+Yanifurahisha mno,\\
+Kuguswa nawe ee! Bwana,\\
+Hata kukuegemea\\
+Kifuani kwa upendo,\\
+Ee! mimi ni wako.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{6}{Yesu atuita leo}{\#41}
+\begin{stanza}
+Yesu atuita leo,\\
+Ulimwenguni;\\
+Usisitesite bure,\\
+Unipe moyo.
+\end{stanza}
+\begin{chorus}
+\setchorusline{Itwike nira ya Yesu,}
+Itwike nira ya Yesu,\\
+Na uwe huru:\\
+Ni wokovu halisi,\\
+Raha na uhuru.
+\end{chorus}
+\begin{stanza}
+Moyo wako ukiwa na\\
+Shida na fadhaa,\\
+Siku zako zikipita\\
+Katika shaka.
+\end{stanza}
+\begin{stanza}
+Wengi waona majonzi\\
+Mioyoni mwao,\\
+Je! wachache watafuta\\
+Raha ya mbingu.
+\end{stanza}
+\begin{stanza}
+Sikia sauti yake\\
+Ikikuonya,\\
+Usifuate njia za\\
+Fujo na shida.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{7}{Habari ya Yesu Kristo}{\#16}
+\begin{stanza}
+Habari ya Yesu Kristo ni njema kwetu,\\
+Hata siku zote Yesu ni yeye yule,\\
+Bado hupenda kurehemu watu wote,\\
+Na kutuliza mioyo ya wenye kuteswa.
+\end{stanza}
+\begin{chorus}
+\setchorusline{Yesu Kristo ndiye yeye yule daima,}
+Yesu Kristo ndiye yeye yule daima,\\
+Jina lake takatifu na lisifiwe.
+\end{chorus}
+\begin{stanza}
+Aliyeitwa rafiki wa wenye dhambi,\\
+Bado hutafuta wale wapoteao,\\
+Bado hupenda kusamehe wakosefu,\\
+Na kuwaambia wasikosee tena.
+\end{stanza}
+\begin{stanza}
+Aliyesamehe Petro usimhofu,\\
+Wala yeye aliyemjia Tomaso,\\
+Aliyemwacha Yohana kumwegemea,\\
+Akualika kwa pendo kumwegemea.
+\end{stanza}
+\begin{stanza}
+Aliyetembea juu ya ziwa tufani,\\
+Bado aweza kututuliza moyoni,\\
+Aliyeomba kwa uchungu Gethsemane,\\
+Hushiriki maumivu pamoja nasi.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{8}{Kondoo wa Mungu}{\#17}
+\begin{stanza}
+Kondoo wa Mungu, nioshe kwa\\
+Damu ya kufidi, nitakase;\\
+Ondoa kila waa, nifanane nawe,\\
+Unitawale kwa pendo lako.
+\end{stanza}
+\begin{stanza}
+Kondoo wa Mungu, unioshe,\\
+Niwe safi ndani, kama wewe;\\
+Sasa damu yako iliyomwagika,\\
+Isafishe moyo, niwe safi.
+\end{stanza}
+\begin{stanza}
+Kondoo wa Mungu, unioshe,\\
+Kwani naamini damu yako;\\
+U karibu nami, raha ziko kwako,\\
+Ee! nimeokoka, nafurahi.
+\end{stanza}
+\begin{stanza}
+Kondoo wa Mungu, unioshe,\\
+Nikikuamini, unioshe;\\
+Nakuletea tu, moyo, mwili, vyote,\\
+Nikikufuata `taokoka.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{9}{Uko mkono wa rehema}{\#90}
+\begin{stanza}
+Uko mkono wa rehema,\\
+Umenyoshwa kwa upendo,\\
+Utatuongoza mjini\\
+Akaapo Baba yetu.
+\end{stanza}
+\begin{chorus}
+\setchorusline{Mkono huo ni kwako,}
+Mkono huo ni kwako,\\
+Umenyoshwa pia kwangu,\\
+Utakuwa mwaminifu,\\
+Po pote tutakapokaa.
+\end{chorus}
+\begin{stanza}
+Je! nisikubali mkono\\
+Unaponikaribisha,\\
+Bwana Yesu hatachukizwa,\\
+Asipoipata haki?
+\end{stanza}
+\begin{stanza}
+Naam, nitashika mkono,\\
+Najua uongozapo,\\
+Naam, nami nitachagua\\
+Kuamini nguvu zake.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{10}{Yesu alikufa}{}
+\begin{stanza}
+Yesu alikufa kwa wenye dhambi,\\
+Acha dhambi zako umwone Mungu;\\
+Patana na Yesu, utakuwa hai,\\
+Kristo ndani ni taraja la utukufu.
+\end{stanza}
+\begin{chorus}
+\setchorusline{Umkiri na mwamini, Yesu, Mwokozi,}
+Umkiri na mwamini, Yesu, Mwokozi,\\
+Roho asitoke kwako daima.
+\end{chorus}
+\begin{stanza}
+Akuita wewe, mwenye mizigo,\\
+Atakupokea akupumzishe;\\
+Muda wa rehema, ziache dhambi,\\
+Mungu atakusamehe akupe raha.
+\end{stanza}
+\begin{stanza}
+Ukisamehewa kwa kifo chake,\\
+Utaokolewa kwa uhai wake;\\
+Akaavyo mwako usiogope,\\
+Utashinda dunia, nafsi na Shetani.
+\end{stanza}
+\begin{stanza}
+Tangaza injili iliyo kweli,\\
+Umepatanishwa kwa kifo chake;\\
+Ukimfuata katika nuru,\\
+Damu ya Yesu itakutakasa kweli.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{11}{Nijue zaidi}{\#2}
+\begin{stanza}
+Nijue zaidi kuhusu\\
+Bwana wetu Kristo Yesu,\\
+Nione upendo wake\\
+Yeye aliyenifia.
+\end{stanza}
+\begin{chorus}
+\setchorusline{Ee! zaidi kuhusu}
+Ee! zaidi kuhusu\\
+Bwana Yesu Kristo,\\
+Nione upendo wake\\
+Yeye aliyenifia.
+\end{chorus}
+\begin{stanza}
+Nijue zaidi kuhusu\\
+Mapenzi yake ya pekee,\\
+Roho wa Mungu, Mwalimu,\\
+Akinionyesha Kristo.
+\end{stanza}
+\begin{stanza}
+Nijue zaidi kuhusu\\
+Ushirika naye Yesu,\\
+Katika kusoma neno\\
+Nipate kumsikia.
+\end{stanza}
+\begin{stanza}
+Nijue zaidi kuhusu\\
+Utukufu wake Yesu,\\
+Zaidi kuhusu kurudi\\
+Kwake Mkuu wa amani.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{21}{Bwana tufundishe}{\#34}
+\begin{stanza}
+Bwana tufundishe jinsi\\
+Ya kuhesabu siku,\\
+Ili tukazane zaidi\\
+Kukusifu daima.
+\end{stanza}
+\begin{chorus}
+\setchorusline{Bwana tuwe na hekima,}
+Bwana tuwe na hekima,\\
+Maadam siku zapita,\\
+Naam, na tufanane nawe,\\
+Hadi tufikapo juu.
+\end{chorus}
+\begin{stanza}
+Tuhesabu siku zetu,\\
+Tuone ni chache tu,\\
+Utupe hekima yako\\
+Ili tutende vema.
+\end{stanza}
+\begin{stanza}
+Tuhesabu siku zetu,\\
+Tuitamani haki,\\
+Tusipoteze wakati,\\
+U asili ya uhai.
+\end{stanza}
+\begin{stanza}
+Tuhesabu siku zetu,\\
+Tuzitumie zote,\\
+Kwa kukuhudumu hadi\\
+Kikomo cha safari.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{31}{Je! ni kwangu}{\#8}
+\begin{stanza}
+Je! ni kwangu, kwangu mimi,\\
+Bwana Yesu aliacha,\\
+Utukufu wa mbinguni,\\
+Je! ni kwangu alikuja?
+\end{stanza}
+\begin{chorus}
+\setchorusline{Ni kwangu tu, naam kwangu,}
+Ni kwangu tu, naam kwangu,\\
+Naona upendo wake,\\
+Kwa upendo huo mkuu\\
+Mwokozi alinifia.
+\end{chorus}
+\begin{stanza}
+Je! ni kwangu malaika,\\
+Waliimba sifa zake,\\
+Na kumtukuza Mungu,\\
+Yesu alipozaliwa?
+\end{stanza}
+\begin{stanza}
+Je! ni kwangu bustanini,\\
+Alilia na kuomba,\\
+Dhambi zangu na za wote\\
+Ziliwekwa mbele yake?
+\end{stanza}
+\begin{stanza}
+Je! ni kwangu kichwa chake,\\
+Kiliinama mtini,\\
+Akamwaga damu yake,\\
+Je! ni kwangu alikufa?
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{41}{Ziache dhambi}{\#111}
+\begin{stanza}
+Ziache dhambi zako,\\
+Zinazokuchosha,\\
+Njoo kwa Tabibu Mkuu,\\
+A\_ takuponyesha;\\
+Aliyemwaga damu\\
+Akuita sasa,\\
+Ili usamehewe,\\
+Na kukaa kwa Mungu.
+\end{stanza}
+\begin{chorus}
+\setchorusline{Ziache dhambi zako}
+Ziache dhambi zako\\
+Zinazokuchosha,\\
+Njoo kwa tabibu mkuu,\\
+A\_ takuponyesha.
+\end{chorus}
+\begin{stanza}
+Njoo kwa Mwokozi wako,\\
+Aliyejitoa,\\
+Urithi enzi yake,\\
+Baada ya mauti;\\
+Usijali Shetani,\\
+Aletaye shaka,\\
+Njoo umwamini Yesu,\\
+Hatakukataa.
+\end{stanza}
+\begin{stanza}
+Utajazwa amani\\
+Ya ajabu kwake,\\
+Furaha yake mwako\\
+I\_ tafuta dhambi;\\
+Ee! sauti laini\\
+Ya pendo na neema\\
+Inakusihi uje\\
+Ukae salama.
+\end{stanza}
+\begin{stanza}
+Usimkane Yesu,\\
+Hata kifo chako,\\
+Kumbuka mwisho wako,\\
+U\_ nakaribia;\\
+Utasimama mbele\\
+Ya kiti chake juu,\\
+Bila kusamehewa\\
+Na utapotea.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{51}{Utakaa wapi}{}
+\begin{stanza}
+Utakaa wapi milele,\\
+Umsikie Mwokozi,\\
+Akikusihi kwa pendo,\\
+Uchague, uchague.
+\end{stanza}
+\begin{chorus}
+\setchorusline{Mwokozi anakusihi,}
+Mwokozi anakusihi,\\
+Ukae kwake milele.
+\end{chorus}
+\begin{stanza}
+Utakaa wapi milele,\\
+Siku zile bila mwisho,\\
+Jitoe, usikaidi\\
+Yesu rafiki wa kweli.
+\end{stanza}
+\begin{stanza}
+Utakaa wapi milele,\\
+Baada ya kufa kwako,\\
+Bado unatangatanga\\
+Kwenye dhambi na anasa.
+\end{stanza}
+\begin{stanza}
+Utakaa wapi milele,\\
+Laiti ungekumbuka,\\
+Siku zako zinapita,\\
+Utafariki dunia.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{61}{Yesu Bwana wangu}{\#14}
+\begin{stanza}
+Yesu Bwana wangu,\\
+Unisikilize,\\
+Sina mahali pa raha,\\
+Ila mbele yako.
+\end{stanza}
+\begin{stanza}
+Unisikilize,\\
+Nashikwa na fadhaa,\\
+Toka dhambi nakujia,\\
+Natamani raha.
+\end{stanza}
+\begin{stanza}
+Nilifurahia\\
+Kutangatanga tu,\\
+Bali sasa nageuka,\\
+Nakujia wewe.
+\end{stanza}
+\begin{stanza}
+Mambo ya dunia,\\
+Yapita upesi,\\
+Niliyafuata sana,\\
+Na sikutosheka.
+\end{stanza}
+\begin{stanza}
+Giza linazidi,\\
+Ee! usiniache,\\
+Naleta moyo mnyonge,\\
+Usinikatae.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{71}{Yesu Mwokozi akusihi}{\#126}
+\begin{stanza}
+Yesu Mwokozi akusihi,\\
+Kwa upole na upendo mkuu,\\
+``Njoo kwangu, ee! usikawie,\\
+:: Uyakimbie maangamizo'' ::
+\end{stanza}
+\begin{stanza}
+Kwa upole anakusihi,\\
+``Njoo kwangu upate utukufu,\\
+Bila taraja, kimbilio,\\
+:: Itakuwaje kwako mwishoni?'' ::
+\end{stanza}
+\begin{stanza}
+Kwa upole anakusihi,\\
+``Njoo kwangu upate utukufu,\\
+Bali wale wapoteao,\\
+:: Wataona aibu milele.'' ::
+\end{stanza}
+\begin{stanza}
+Kwa upole anakusihi,\\
+Na malaika wakulilia,\\
+Je! hujali kwamba waweza,\\
+:: Kufa dhambini bila taraja? ::
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{81}{Miaka michache}{}
+\begin{stanza}
+Miaka michache\\
+Iliyobakia,\\
+Halafu tutapumzika\\
+Pamoja na Kristo.
+\end{stanza}
+\begin{chorus}
+\setchorusline{Unitayarishe}
+Unitayarishe\\
+Kwa siku ile kuu\\
+Nioshe kwa damu yako,\\
+Niondolee dhambi.
+\end{chorus}
+\begin{stanza}
+Tunakaribia\\
+Mwisho wa safari,\\
+Ndipo tutakapofika\\
+Alipo Mwokozi.
+\end{stanza}
+\begin{stanza}
+Siku za tufani\\
+Zitakuwa chache,\\
+Ndipo tutakuwa pale\\
+Penye utulivu.
+\end{stanza}
+\begin{stanza}
+Bado kitambo tu,\\
+Yesu atarudi,\\
+Na tutatawala naye\\
+Enzini milele.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{91}{Mungu akukaribisha}{\#37}
+\begin{stanza}
+Mungu akukaribisha\\
+Kwenye maisha safi,\\
+Upate wokovu kweli\\
+Njoo anapokuita.
+\end{stanza}
+\begin{chorus}
+\setchorusline{Hakuna jambo muhimu}
+Hakuna jambo muhimu\\
+Zaidi ya wokovu,\\
+Katika ulimwengu huu\\
+Hata ule ujao.
+\end{chorus}
+\begin{stanza}
+Usikie manabii\\
+Wakikusihi sana,\\
+``Tafuta wokovu wake\\
+Unapopatikana.''
+\end{stanza}
+\begin{stanza}
+Umwombe akusamehe,\\
+Na atakusikia,\\
+Mwa Kristo hamna lawama,\\
+Basi jistiri mwake.
+\end{stanza}
+\begin{stanza}
+Mungu anakualika,\\
+``Uje kabla ya kifo,\\
+Nikuvikapo wokovu,\\
+Utaishi milele.''
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{101}{Ee! nienende karibu}{\#266}
+\begin{stanza}
+Ee! nienende karibu\\
+Zaidi naye Mungu,\\
+Nisikie neno lake,\\
+Na kumpendeza.
+\end{stanza}
+\begin{stanza}
+Mapenzi yake ni bora,\\
+Yatuweka huru,\\
+Tutaingia rahani,\\
+Tukijikana tu.
+\end{stanza}
+\begin{stanza}
+Tukiyapenda maisha,\\
+Tutayapoteza,\\
+Tukiyatoa kwa Mungu,\\
+Tutafaidi mno.
+\end{stanza}
+\begin{stanza}
+Kutenda mapenzi yake\\
+Kutatuwezesha,\\
+Kushinda uovu wetu,\\
+Tupate amani.
+\end{stanza}
+\end{hymn}
+
+
+\end{multicols}
+\end{document}
