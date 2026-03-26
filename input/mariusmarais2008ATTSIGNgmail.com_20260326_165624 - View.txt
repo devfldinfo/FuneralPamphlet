@@ -1,0 +1,110 @@
+
+\documentclass{article}
+\usepackage{FP}
+\usepackage{graphicx}
+\usepackage{multicol}
+\begin{document}
+
+\begin{titlepage}
+  \centering
+  \vspace*{0.1\textheight}
+  {\fontsize{60}{72}\selectfont \bfseries ssh \par}
+  \vspace{0.1\textheight}
+  \includegraphics[height=0.3\textheight,keepaspectratio]{input/image.jpg}
+  \par\vspace{0.1\textheight}
+  {\huge sjsh \par}
+\end{titlepage}
+
+\clearpage
+\begin{multicols}{2}
+\setlength{\columnseprule}{0.3pt}
+\begin{hymn}{50}{Ek hoor sy stem}{\#250}
+\begin{stanza}
+Ek hoor sy stem; my Heiland spreek tot my.\\
+My siel verhef Hom; antwoord o, so bly:\\
+``Gods' Lam, geslag vir my op Golgota,\\
+Ek hoor u stem en volg U deur gena'.''
+\end{stanza}
+\begin{stanza}
+Hoe salig soet te ken my God en Heer;\\
+Hy daal ook van sy Vaderstroon hier neer.\\
+Vir my verlaat Hy selfs sy Vadershuis\\
+En sterf onskuldig aan die wrede kruis.
+\end{stanza}
+\begin{stanza}
+In stil' gemeenskap met die Gees van God;\\
+Met vreugd' aanbid ek; wat 'n sielsgenot.\\
+Ek kniel hier in aanbidding voor U neer;\\
+Skenk my genade en ook liefde meer.
+\end{stanza}
+\begin{stanza}
+Nie meer vervreemd van Jesus' liefde teer,\\
+Maar reeds versoen aanskou ek nou my Heer:\\
+Vreugd' onuitspreeklik, vry van sieledors.\\
+In vrede rus en lê ek teen sy bors.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{60}{Gebroke en verslae hart}{\#382}
+\begin{stanza}
+Gebroke en verslae hart'\\
+Sal U, Heer, nie verag;\\
+U wil ons Skild en Sterkte wees;\\
+Ons raad gee, dag na dag.\\
+Gebroke gees dit is die prys\\
+Wat hemelskure oop hou.\\
+As ons waardig wandel hier\\
+Sal Hy ons leed versag.
+\end{stanza}
+\begin{stanza}
+Die vlugste wen die wedren nie;\\
+Die held nie juis die stryd;\\
+Maar elke toets het Hy oorwin\\
+In al sy ned'righeid.\\
+Die stryd oorwin Hy in gebed\\
+Geduldig, moedig, rustig.\\
+Lewend offerande is\\
+Verwerp deur mensenyd.
+\end{stanza}
+\begin{stanza}
+Oorwinning sal diegene kry\\
+Wat luister na Gods' stem;\\
+Soos Paulus trou gehoorsaam bly;\\
+Gelowig aan sy woord;\\
+Hul klere hier ook rein bewaar\\
+Al sou hul vriende val hier;\\
+Dit bemoedig ook die Heer\\
+Te help wie Hom behoort.
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{70}{God het sy dierbaar' Seun}{\#212}
+\begin{stanza}
+God het sy dierbaar' Seun gestuur\\
+Vanaf sy Hemelryk;\\
+Hy het gekom om ons te toon\\
+Wat liefde kan bereik.\\
+Vanaf sy Vadershuis kom Hy\\
+En sterf vir ons, vir u en my.
+\end{stanza}
+\begin{stanza}
+Onblusbaar' ywer spoor Hom aan\\
+Te doen sy Vaders' wil;\\
+Asook geregtigheid te doen\\
+En dit ook te vervul.\\
+Hy bring toe sy groot offerand'\\
+En sit nou aan Gods' regterhand.
+\end{stanza}
+\begin{stanza}
+Sy heiliges vereer sy Naam;\\
+Hul is geen grote skaar,\\
+Maar hul bemin opreg wat Hy\\
+Aan kinders openbaar.\\
+Met eind'loos vree' en saligheid\\
+Aanskou hul sy geregtigheid.
+\end{stanza}
+\end{hymn}
+
+
+\end{multicols}
+\end{document}
