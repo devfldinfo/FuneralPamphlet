@@ -1,0 +1,97 @@
+
+\documentclass{article}
+\usepackage{FP}
+\usepackage{graphicx}
+\usepackage{multicol}
+\begin{document}
+
+\begin{titlepage}
+  \centering
+  \vspace*{0.1\textheight}
+  {\fontsize{60}{72}\selectfont \bfseries Hdjdjdj \par}
+  \vspace{0.1\textheight}
+  \includegraphics[height=0.3\textheight,keepaspectratio]{input/image.jpg}
+  \par\vspace{0.1\textheight}
+  {\huge Jdjdjdj \par}
+\end{titlepage}
+
+\clearpage
+\begin{multicols}{2}
+\setlength{\columnseprule}{0.3pt}
+\begin{hymn}{1}{Tell me the story of Jesus}{}
+\begin{stanza}
+Tell me the story of Jesus;\\
+Write on my heart every word.\\
+Tell me the story most precious,\\
+Sweetest that ever was heard.\\
+Tell how the angels, in chorus,\\
+Sang as they welcomed His birth,\\
+"Glory to God in the highest!\\
+Peace and good tidings to earth."
+\end{stanza}
+\begin{chorus}
+\setchorusline{Tell me the story of Jesus;}
+Tell me the story of Jesus;\\
+Write on my heart every word.\\
+Tell me the story most precious,\\
+Sweetest that ever was heard.
+\end{chorus}
+\begin{stanza}
+Fasting alone in the desert,\\
+Tell of the days that He passed,\\
+How for our sins He was tempted,\\
+Yet was triumphant at last.\\
+Tell of the years of His labour;\\
+Tell of the sorrow He bore;\\
+He was despised and afflicted,\\
+Homeless, rejected and poor.
+\end{stanza}
+\begin{stanza}
+Tell of the cross where they nailed Him,\\
+Suffering in anguish and pain;\\
+Tell of the grave where they laid Him,\\
+Tell how He liveth again.\\
+Love in that story so tender,\\
+Clearer than ever I see;\\
+Stay, let me say, "I will follow\\
+Him who has suffered for me."
+\end{stanza}
+\end{hymn}
+
+\begin{hymn}{2}{More about Jesus}{}
+\begin{stanza}
+More about Jesus would I know,\\
+More of His grace to others show;\\
+More of His saving fullness see,\\
+More of His love who died for me.
+\end{stanza}
+\begin{chorus}
+\setchorusline{More, more about Jesus;}
+More, more about Jesus;\\
+More, more about Jesus;\\
+More of His saving fullness see,\\
+More of His love who died for me.
+\end{chorus}
+\begin{stanza}
+More about Jesus let me learn,\\
+More of His holy will discern;\\
+Spirit of God, my teacher be,\\
+Showing the things of Christ to me.
+\end{stanza}
+\begin{stanza}
+More about Jesus in His word,\\
+Holding communion with my Lord,\\
+Hearing His voice in every line,\\
+Making each faithful saying mine.
+\end{stanza}
+\begin{stanza}
+More about Jesus on His throne,\\
+Riches in glory all His own;\\
+More of His kingdom's sure increase;\\
+More of His coming, Prince of peace.
+\end{stanza}
+\end{hymn}
+
+
+\end{multicols}
+\end{document}
